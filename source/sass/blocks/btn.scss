@@ -1,0 +1,27 @@
+.btn {
+  display: inline-flex;
+  padding: 27px 44px;
+
+  color: $color-default-white;
+  text-align: center;
+
+  background-color: transparent;
+  border: 2px solid $color-default-white;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
