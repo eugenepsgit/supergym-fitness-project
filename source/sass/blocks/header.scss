@@ -1,0 +1,44 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-image: $red-to-right;
+
+  @include vp-767 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.header__contacts {
+  color: $color-default-white;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include hover-focus {
+    color: #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-text-default;
+    text-decoration: solid;
+    text-decoration-color:  $color-text-default;
+  }
+}
