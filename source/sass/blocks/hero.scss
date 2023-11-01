@@ -23,8 +23,9 @@
 }
 
 .hero__text-content {
-  flex-basis: 28.1vw;
+  flex-basis: 28.2vw;
   display: grid;
+  column-gap: 1.7vw;
 
   @include vp-1365 {
     flex-basis: 42.1vw;
