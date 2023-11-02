@@ -78,13 +78,16 @@
           </div>
           <div class="presentation__media-content">
             <picture>
+              <source type="image/webp" media="(max-width: 1365px)"
+                srcset="img/presentation/gym-photo-tablet@1x.webp 1x, images/presentation/gym-photo-tablet@2x.webp 2x" width="678"
+                height="345">
               <source type="image/webp"
                 srcset="img/presentation/gym-photo@1x.webp 1x, images/presentation/gym-photo@2x.webp 2x" width="660"
                 height="401">
               <img src="img/presentation/gym-photo@1x.jpg" srcset="img/presentation/gym-photo@2x.jpg 2x" width="660"
                 height="401" alt="Обзорное фото тренажерного зала ">
             </picture>
-            <div class="presentation__video">
+            <div class="presentation__video presentation__video--overlay">
               <picture>
                 <source type="image/webp"
                   srcset="img/presentation/gym-tour-static@1x.webp 1x, img/presentation/gym-tour-static@2x.webp 2x"
@@ -92,6 +95,15 @@
                 <img src="img/presentation/gym-tour-static@1x.jpg" srcset="img/presentation/gym-tour-static@2x.jpg 2x"
                   width="364" height="228" alt="Постер для обзорного видео">
               </picture>
+              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=hKFPFaEpaZpkiek7"
+                title="Бесплатные интерактивные онлайн-курсы." frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <button class="presentation__play-button" aria-label="Воспроизвести видео.">
+                <svg width="13" height="15" viewbox="0 0 13 15">
+                  <use href="img/sprite.svg#play-button"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
