@@ -1,0 +1,69 @@
+.tariff-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 0 65px;
+  border: 7px solid $color-default-white;
+  background-color: $color-default-white;
+
+  @include hover-focus {
+    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1;
+
+    .tariff-plan__buy {
+      border: none;
+      background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+      color: $color-default-white;
+    }
+  }
+}
+
+.tariff-plan__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0 0 6px;
+}
+
+.tariff-plan__option {
+  margin: 0 0 69px;
+}
+
+.tariff-plan__price {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+  margin: 0 0 35px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #103aae;
+
+  &::before {
+    position: absolute;
+    content: "";
+    color: rgb(232, 232, 232, 0.48);
+  }
+}
+
+.tariff-plan__currency {
+  font-family: $ff-rouble;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: $color-text-default;
+}
+
+.tariff-plan .tariff-plan__buy {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: $color-text-default;
+  width: max-content;
+  padding: 25px 43px;
+  border: solid 2px $color-text-default;
+}

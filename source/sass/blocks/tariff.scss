@@ -1,0 +1,93 @@
+.tariff {
+  background-color:#f8f9fc;
+}
+
+.tariff__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 124px;
+  padding-bottom: 120px;
+}
+
+.tariff__title {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  text-align: center;
+  margin: 0 0 33px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.tariff__controls-list {
+  position: relative;
+  display: flex;
+  align-self: center;
+  list-style: none;
+  column-gap: 50px;
+  margin: 0 0 37px;
+  padding: 0;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+}
+
+.tariff__control {
+  padding: 0 0 10px;
+  border: none;
+  border-bottom: solid 2px transparent;
+  background-color: transparent;
+  color: $color-text-transparent;
+
+  @include hover-focus {
+    color: $color-text-default;
+    border-bottom: solid 2px #ed0233
+  }
+
+  @include active {
+    color: $color-text-default;
+    border-bottom: solid 2px #ed0233;
+  }
+
+  &:disabled {
+    color: $color-text-default;
+    opacity: 0.3;
+  }
+}
+
+.tariff__list {
+  display: flex;
+  list-style: none;
+  column-gap: 2.9vw;
+  padding: 0;
+  margin: 0;
+}
+
+.tariff__list-item {
+  flex-basis: 26.4vw;
+  flex-shrink: 0;
+}
+
