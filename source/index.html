@@ -77,18 +77,26 @@
             </div>
           </div>
           <div class="presentation__media-content">
-            <picture>
-              <source type="image/webp" media="(max-width: 1365px)"
-                srcset="img/presentation/gym-photo-tablet@1x.webp 1x, images/presentation/gym-photo-tablet@2x.webp 2x" width="678"
-                height="345">
-              <source type="image/webp"
-                srcset="img/presentation/gym-photo@1x.webp 1x, images/presentation/gym-photo@2x.webp 2x" width="660"
-                height="401">
-              <img src="img/presentation/gym-photo@1x.jpg" srcset="img/presentation/gym-photo@2x.jpg 2x" width="660"
-                height="401" alt="Обзорное фото тренажерного зала ">
-            </picture>
+            <div class="presentation__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/presentation/gym-photo-mobile@1x.webp 1x, img/presentation/gym-photo-mobile@2x.webp 2x"
+                  width="320" height="313">
+                <source type="image/webp" media="(max-width: 1365px)"
+                  srcset="img/presentation/gym-photo-tablet@1x.webp 1x, img/presentation/gym-photo-tablet@2x.webp 2x"
+                  width="678" height="345">
+                <source type="image/webp"
+                  srcset="img/presentation/gym-photo@1x.webp 1x, img/presentation/gym-photo@2x.webp 2x" width="660"
+                  height="401">
+                <img src="img/presentation/gym-photo@1x.jpg" srcset="img/presentation/gym-photo@2x.jpg 2x" width="660"
+                  height="401" alt="Обзорное фото тренажерного зала ">
+              </picture>
+            </div>
             <div class="presentation__video presentation__video--overlay">
               <picture>
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/presentation/gym-tour-static-mobile@1x.webp 1x, img/presentation/gym-tour-static-mobile@2x 2x"
+                  width="320" height="167">
                 <source type="image/webp"
                   srcset="img/presentation/gym-tour-static@1x.webp 1x, img/presentation/gym-tour-static@2x.webp 2x"
                   width="364" height="228">
