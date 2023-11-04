@@ -1,5 +1,5 @@
 .tariff {
-  background-color:#f8f9fc;
+  background-color: #f8f9fc;
 }
 
 .tariff__wrapper {
@@ -7,6 +7,16 @@
   flex-direction: column;
   padding-top: 124px;
   padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
 }
 
 .tariff__title {
@@ -22,12 +32,14 @@
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
+    margin-bottom: 35px;
   }
 
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
+    margin-bottom: 21px;
   }
 }
 
@@ -36,7 +48,7 @@
   display: flex;
   align-self: center;
   list-style: none;
-  column-gap: 50px;
+  column-gap: 3.7vw;
   margin: 0 0 37px;
   padding: 0;
 
@@ -53,6 +65,21 @@
     bottom: 0;
     background-color: rgba(120, 120, 120, 0.2);
   }
+
+  @include vp-1365 {
+    column-gap: 7vw;
+    margin-bottom: 44px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    column-gap: 14.1vw;
+    margin-bottom: 34px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+  }
 }
 
 .tariff__control {
@@ -61,6 +88,10 @@
   border-bottom: solid 2px transparent;
   background-color: transparent;
   color: $color-text-transparent;
+
+  @include vp-767 {
+    padding-bottom: 15px;
+  }
 
   @include hover-focus {
     color: $color-text-default;
@@ -81,13 +112,30 @@
 .tariff__list {
   display: flex;
   list-style: none;
-  column-gap: 2.9vw;
+  column-gap: 2.83vw;
   padding: 0;
   margin: 0;
+
+  @include vp-1365 {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 40px;
+  }
+
+  @include vp-767 {
+    row-gap: 34px;
+  }
 }
 
 .tariff__list-item {
-  flex-basis: 26.4vw;
+  flex-basis: 26.45vw;
   flex-shrink: 0;
-}
 
+  @include vp-1365 {
+    flex-basis: 57.3vw;
+  }
+
+  @include vp-767 {
+    flex-basis: 100%;
+  }
+}

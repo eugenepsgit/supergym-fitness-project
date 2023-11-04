@@ -8,7 +8,7 @@
     column-gap: 0;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 105px;
     padding-bottom: 183px;
   }
 
@@ -40,7 +40,7 @@
 
   @include vp-1365 {
     flex-basis: 65.3vw;
-    margin-bottom: 38px;
+    margin-bottom: 31px;
     text-align: center;
 
     h2 {
