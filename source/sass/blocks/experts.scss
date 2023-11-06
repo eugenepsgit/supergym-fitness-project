@@ -1,3 +1,7 @@
+.experts {
+  position: relative;
+}
+
 .experts__list {
   padding: 0;
   margin: 0;
@@ -6,7 +10,6 @@
 
 .experts__card {
   position: relative;
-  width: 19.03vw;
 }
 
 .experts__name {
@@ -28,8 +31,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 19.03vw;
-  height: 21.52vw;
+  width: 100%;
+  height: 100%;
   padding: 5.49vw 3.66vw 3.66vw;
   top: 0;
   left: 0;
@@ -59,16 +62,39 @@
 
 .experts__button {
   position: absolute;
-  top: 50%;
+  top: 55.4%;
+  width: 56px;
+  height: 56px;
   padding: 0;
-  border: none;
+  border: solid 1px transparent;
   background-color: transparent;
+  color: transparent;
+  cursor: pointer;
 
   & svg {
+    position: absolute;
+    top: 10px;
     stroke: $color-text-default;
   }
 
   &--prev {
-    left: -20px;
+    left: -74px;
+
+    & svg {
+      left: 16px;
+    }
+  }
+
+  &--next {
+    right: -74px;
+
+    & svg {
+      right: 16px;
+    }
+  }
+
+  @include hover-focus {
+    border-radius: 50%;
+    border: solid 1px $color-text-default;
   }
 }
