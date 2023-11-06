@@ -74,8 +74,7 @@
                 Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
               </p>
               <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
-                есть
-                несколько оборудованных залов для различных видов групповых занятий. </p>
+                есть несколько оборудованных залов для различных видов групповых занятий. </p>
             </div>
           </div>
           <div class="presentation__media-content">
@@ -120,9 +119,7 @@
       </section>
       <section class="tariff">
         <div class="tariff__wrapper container" data-tabs="parent">
-          <h2 class="tariff__title" id="membership">
-            Абонементы
-          </h2>
+          <h2 class="tariff__title" id="membership">Абонементы</h2>
           <ul class="tariff__controls-list" data-tabs="controls">
             <li class="tariff__controls-item">
               <button class="tariff__control" data-tabs="control" data-index="0">1 месяц</button>
@@ -138,7 +135,7 @@
             <ul class="tariff__list" data-tabs="element">
               <li class="tariff__list-item tariff-plan">
                 <h3 class="tariff-plan__title">С тренером</h3>
-                <p class="tariff-plan__option"> 12 занятий</p>
+                <p class="tariff-plan__option">12 занятий</p>
                 <p class="tariff-plan__price" data-price="5000">5000
                   <span class="tariff-plan__currency">&#8381;</span>
                 </p>
@@ -236,6 +233,25 @@
                 <dt>Время</dt>
                 <dd class="poster__time-content">12:00</dd>
               </dl>
+              <!-- <div class="events__poster poster">
+            <div class="poster__text-content">
+              <p class="poster__name">Super games</p>
+              <p class="poster__description">Ежегодные соревнования по CrossFit</p>
+              <dl class="poster__list">
+                <dt class="poster__desc">Дата</dt>
+                <dd class="poster__value">7
+                  <div class="poster__date">
+                    <span>Марта</span>
+                    <span>2019</span>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="poster__list">
+                <dt class="poster__desc">Время</dt>
+                <dd class="poster__value">12:00</dd>
+              </dl>
+              <a class="poster__btn btn" href="#">Заполнить заявку</a>
+            </div> -->
               <a class="poster__btn btn" href="#">Заполнить заявку</a>
             </div>
             <div class="poster__image">
@@ -260,106 +276,139 @@
               </picture>
             </div>
           </div>
-          <h3 class="events__subtitle">Жюри</h3>
           <div class="events__experts experts">
-            <ul class="experts__list">
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Анна Павлова"></div>
-                <div class="experts__info">
+            <h3 class="events__subtitle">Жюри</h3>
+            <div class="experts__slider swiper">
+              <ul class="experts__list swiper-wrapper">
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Анна Павлова</h4>
-                  <p class="experts__specialty">Cosplay</p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Anime otaku 3 level</li>
-                    <li class="experts__biography-item">Победитель аниме-квиза в Саратове</li>
-                    <li class="experts__biography-item">Опыт - 16 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Алексей Лавров"></div>
-                <div class="experts__info">
+                  <div class="experts__photo">
+                    <img src="img/experts/expert-anna-pavlova@1x.jpg" srcset="img/experts/expert-anna-pavlova@2x.jpg 2x"
+                      width="260" height="294" alt="Фото члена жюри Анны Павловой">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">Cosplay</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Anime otaku 3 level</li>
+                      <li class="experts__biography-item">Победитель аниме-квиза в Саратове</li>
+                      <li class="experts__biography-item">Опыт - 16 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Алексей Лавров</h4>
-                  <p class="experts__specialty">MagicFlow</p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Certified exorcist</li>
-                    <li class="experts__biography-item">Чемпион по картам таро Мурманской области</li>
-                    <li class="experts__biography-item">Опыт - 3 года</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Александр Пашков"></div>
-                <div class="experts__info">
+                  <div class="experts__photo">
+                    <img src="img/experts/expert-alex-lavrov@1x.jpg" srcset="img/experts/expert-alex-lavrov@2x.jpg 2x"
+                      width="260" height="294" alt="Фото члена жюри Алексея Лаврова">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">MagicFlow</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Certified exorcist</li>
+                      <li class="experts__biography-item">Чемпион по картам таро Мурманской области</li>
+                      <li class="experts__biography-item">Опыт - 3 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Александр Пашков</h4>
-                  <p class="experts__specialty">CrossFit</p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Certified Level 3 Trainer</li>
-                    <li class="experts__biography-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="experts__biography-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Мария Кетова"></div>
-                <div class="experts__info">
+                  <div class="experts__photo">
+                    <img src="img/experts/expert-alexandr-pashkov@1x.jpg"
+                      srcset="img/experts/expert-alexandr-pashkov@2x.jpg 2x" width="260" height="294"
+                      alt="Фото члена жюри Аоександра Пашкова">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">CrossFit</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Certified Level 3 Trainer</li>
+                      <li class="experts__biography-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="experts__biography-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Мария Кетова</h4>
-                  <p class="experts__specialty"></p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Мастер спорта России</li>
-                    <li class="experts__biography-item">Чемпионка России по бодифитнесу</li>
-                    <li class="experts__biography-item">Опыт - 4 года</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Анна Павлова"></div>
-                <div class="experts__info">
+                  <div class="experts__photo" data-name="Мария Кетова">
+                    <img src="img/experts/expert-maria-ketova@1x.jpg" srcset="img/experts/expert-maria-ketova@2x.jpg 2x"
+                      width="260" height="294" alt="Фото члена жюри Марии Кетовой">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">BodyFitness</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Мастер спорта России</li>
+                      <li class="experts__biography-item">Чемпионка России по бодифитнесу</li>
+                      <li class="experts__biography-item">Опыт - 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Анна Павлова</h4>
-                  <p class="experts__specialty">Cosplay</p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Anime otaku 3 level</li>
-                    <li class="experts__biography-item">Победитель аниме-квиза в Саратове</li>
-                    <li class="experts__biography-item">Опыт - 16 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Алексей Лавров"></div>
-                <div class="experts__info">
+                  <div class="experts__photo" data-name="Анна Павлова">
+                    <img src="img/experts/expert-anna-pavlova@1x.jpg" srcset="img/experts/expert-anna-pavlova@2x.jpg 2x"
+                      width="260" height="294" alt="Фото члена жюри Анны Павловой">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">Cosplay</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Anime otaku 3 level</li>
+                      <li class="experts__biography-item">Победитель аниме-квиза в Саратове</li>
+                      <li class="experts__biography-item">Опыт - 16 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Алексей Лавров</h4>
-                  <p class="experts__specialty">MagicFlow</p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Certified ecsorcist</li>
-                    <li class="experts__biography-item">Чемпион по картам таро Мурманской области</li>
-                    <li class="experts__biography-item">Опыт - 3 года</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Александр Пашков"></div>
-                <div class="experts__info">
+                  <div class="experts__photo" data-name="Алексей Лавров">
+                    <img src="img/experts/expert-alex-lavrov@1x.jpg" srcset="img/experts/expert-alex-lavrov@2x.jpg 2x"
+                      width="260" height="294" alt="Фото члена жюри Алексея Лаврова">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">MagicFlow</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Certified ecsorcist</li>
+                      <li class="experts__biography-item">Чемпион по картам таро Мурманской области</li>
+                      <li class="experts__biography-item">Опыт - 3 года</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Александр Пашков</h4>
-                  <p class="experts__specialty">CrossFit</p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Certified Level 3 Trainer</li>
-                    <li class="experts__biography-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="experts__biography-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="experts__card">
-                <div class="experts__photo" data-name="Мария Кетова"></div>
-                <div class="experts__info">
+                  <div class="experts__photo" data-name="Александр Пашков">
+                    <img src="img/experts/expert-alexandr-pashkov@1x.jpg"
+                      srcset="img/experts/expert-alexandr-pashkov@2x.jpg 2x" width="260" height="294"
+                      alt="Фото члена жюри Александра Пашкова">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">CrossFit</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Certified Level 3 Trainer</li>
+                      <li class="experts__biography-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="experts__biography-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="experts__card swiper-slide">
                   <h4 class="experts__name">Мария Кетова</h4>
-                  <p class="experts__specialty"></p>
-                  <ul class="experts__biography">
-                    <li class="experts__biography-item">Мастер спорта России</li>
-                    <li class="experts__biography-item">Чемпионка России по бодифитнесу</li>
-                    <li class="experts__biography-item">Опыт - 4 года</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+                  <div class="experts__photo" data-name="Мария Кетова">
+                    <img src="img/experts/expert-maria-ketova@1x.jpg" srcset="img/experts/expert-maria-ketova@2x.jpg 2x"
+                      width="260" height="294" alt="Фото члена жюри Марии Кетовой">
+                  </div>
+                  <div class="experts__info">
+                    <p class="experts__specialty">BodyFitness</p>
+                    <ul class="experts__biography">
+                      <li class="experts__biography-item">Мастер спорта России</li>
+                      <li class="experts__biography-item">Чемпионка России по бодифитнесу</li>
+                      <li class="experts__biography-item">Опыт - 4 года</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <button class="experts__button experts__button--prev" type="button">
+                <svg width="16" height="32" viewbox="0 0 16 32">
+                  <use href="img/sprite.svg#arrow"></use>
+              </button>
+              <button class="experts__button experts__button--next" type="button"></button>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,74 @@
+.experts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.experts__card {
+  position: relative;
+  width: 19.03vw;
+}
+
+.experts__name {
+  position: absolute;
+  margin: 0;
+  top: 245px;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.experts__photo {}
+
+.experts__info {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 19.03vw;
+  height: 21.52vw;
+  padding: 5.49vw 3.66vw 3.66vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.experts__specialty {
+  color: #b7becd;
+}
+
+.experts__biography {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-default-white;
+  list-style-type: disc;
+}
+
+.experts__biography-item {
+  padding-left: 5px;
+
+  &::marker {
+    font-size: 14px;
+  }
+}
+
+.experts__button {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & svg {
+    stroke: $color-text-default;
+  }
+
+  &--prev {
+    left: -20px;
+  }
+}
