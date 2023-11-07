@@ -11,6 +11,7 @@ const sliderInit = new Swiper(slider, {
   spaceBetween: 40,
   allowSlideNext: true,
   allowSlidePrev: true,
+  containerModifierClass: 'experts__',
   navigation: {
     nextEl: nextButton,
     prevEl: prevButton,
