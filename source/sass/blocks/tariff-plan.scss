@@ -61,11 +61,15 @@
 
 .tariff-plan__price {
   position: relative;
+  z-index: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   column-gap: 14px;
   margin: 0 0 35px;
+
   font-size: 60px;
   font-weight: 700;
   line-height: 90px;
