@@ -1,4 +1,14 @@
-.experts {
+.experts__title {
+  margin: 0 0 45px;
+
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+}
+
+.experts__slider {
   position: relative;
 }
 
@@ -36,7 +46,10 @@
   color: $color-default-white;
 }
 
-.experts__photo {}
+.experts__photo {
+  width: 100%;
+  object-fit: cover;
+}
 
 .experts__info {
   position: absolute;
@@ -76,7 +89,8 @@
 
 .experts__button {
   position: absolute;
-  top: 55.4%;
+  top: 50%;
+  transform: translateY(-50%);
   width: 56px;
   height: 56px;
   padding: 0;

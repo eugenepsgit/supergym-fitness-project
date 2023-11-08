@@ -1,16 +1,19 @@
 import Swiper from '../../vendor/swiper';
 
-const slider = document.querySelector('.experts__slider');
 const prevButton = document.querySelector('.experts__button--prev');
 const nextButton = document.querySelector('.experts__button--next');
 
-const sliderInit = new Swiper(slider, {
+const sliderInit = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 4,
   spaceBetween: 40,
   allowSlideNext: true,
   allowSlidePrev: true,
+  a11y: {
+    prevSlideMessage: 'Предыдущий слайд',
+    nextSlideMessage: 'Следующий слайд',
+  },
   containerModifierClass: 'experts__',
   navigation: {
     nextEl: nextButton,

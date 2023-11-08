@@ -1,5 +1,6 @@
 .poster {
   display: flex;
+
   color: $color-default-white;
 
   @include vp-767 {
@@ -8,17 +9,21 @@
 }
 
 .poster__text-content {
+  display: grid;
+
   flex-basis: 36.6vw;
   padding: 5.86vw;
-  display: grid;
-  background-color:#ed0233;
+
+  background-color: #ed0233;
 
   @include vp-1365 {
+    column-gap: 2px;
     flex-basis: 38vw;
     padding: 5.21vw 5.86vw 5.86vw;
   }
 
   @include vp-767 {
+    column-gap: 0;
     flex-basis: 100%;
     padding: 12.5vw;
   }
@@ -26,7 +31,9 @@
 
 .poster__name {
   margin: 0;
+
   grid-area: 1/1/3/2;
+
   font-family: $ff-alumni;
   font-size: 82px;
   font-weight: 600;
@@ -41,9 +48,11 @@
   }
 }
 
-.poster__description {
+.poster__subname {
   margin: 0 0 55px;
+
   grid-area: 3/1/4/3;
+
   font-size: 18px;
   line-height: 24px;
 
@@ -52,137 +61,125 @@
   }
 
   @include vp-767 {
+    width: 85%;
     margin-bottom: 20px;
+
     font-size: 16px;
     line-height: 20px;
   }
 }
 
-.poster__date {
-  position: relative;
+.poster__list {
   display: flex;
   flex-direction: column;
-  width: min-content;
-  margin: 0 0 20px;
-  row-gap: 15px;
-  grid-area: 1/2/2/3;
-  font-size: 18px;
+  row-gap: 20px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 31px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: $color-default-white;
-  }
+  width: min-content;
+  grid-area: 1/2/3/3;
+
+  margin: 0 0 20px;
 
   @include vp-1365 {
-    margin-bottom: 8px;
-    row-gap: 2px;
+    row-gap: 8px;
 
-    &::before {
-      top: 23px;
-    }
+    margin-bottom: 6px;
   }
 
   @include vp-767 {
-    font-size: 16px;
-    line-height: 20px;
+    row-gap: 6px;
 
-    &::before {
-      top: 19px;
-    }
+    margin-bottom: 13px;
   }
 }
 
-.poster__date-content {
-  display: flex;
-  column-gap: 6px;
-  margin: 0;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 32px;
-
-  @include vp-1365 {
-    font-size: 24px;
-    line-height: 24px;
-  }
-}
-
-.poster__date-column {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-
-  @include vp-1365 {
-    font-size: 10px;
-    line-height: 11px;
-  }
-}
-
-.poster__month {
-}
-
-.poster__year {
-}
-
-.poster__time {
-  position: relative;
+.poster__item {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
-  margin: 0 0 23px;
-  grid-area: 2/2/3/3;
-  font-size: 18px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 32px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: $color-default-white;
-  }
 
   @include vp-1365 {
-    margin-bottom: 6px;
     row-gap: 2px;
-
-    &::before {
-      top: 23px;
-    }
   }
 
   @include vp-767 {
-    margin-bottom: 13px;
-    font-size: 16px;
-    line-height: 20px;
-
-    &::before {
-      top: 18px;
-    }
+    row-gap: 3px;
   }
 }
 
-.poster__time-content {
+.poster__desc {
   margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.poster__value {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+
+  margin: 0;
+  margin-right: auto;
+
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+
   @include vp-1365 {
+    column-gap: 3px;
+
     font-size: 24px;
     line-height: 24px;
+
+    &::before {
+      top: -3px;
+    }
+  }
+
+  @include vp-767 {
+    &::before {
+      top: -4px;
+    }
+  }
+}
+
+.poster__date {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @include vp-1365 {
+    row-gap: 0;
+
+    font-size: 10px;
+    line-height: 10px
   }
 }
 
 .poster__btn {
   grid-area: 4/1/5/3;
+
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
@@ -190,7 +187,8 @@
   text-transform: uppercase;
 
   @include vp-1365 {
-    padding-bottom: 19px;
+    padding: 20px 0;
+
     font-weight: 400;
   }
 
@@ -206,6 +204,7 @@
 
   & img {
     width: 100%;
+    object-fit: cover;
   }
 
   @include vp-1365 {
@@ -216,4 +215,3 @@
     flex-basis: 100%;
   }
 }
-
