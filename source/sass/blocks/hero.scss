@@ -133,6 +133,22 @@
     text-align: center;
     font-weight: 700;
   }
+
+  @include hover-focus {
+    background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1;
+
+    color: $color-default-white;
+  }
+
+  &:active {
+    background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-slice: 1;
+
+    color: rgba(255, 255, 255, 0.7)
+  }
 }
 
 .hero__present-image {

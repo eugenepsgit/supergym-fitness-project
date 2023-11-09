@@ -31,7 +31,7 @@
     }
   }
 
-  &:focus {
+  &.focus-visible:focus {
     @content;
   }
 }

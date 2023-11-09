@@ -120,6 +120,8 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 40px;
+
+    width: 100%;
   }
 
   @include vp-767 {
