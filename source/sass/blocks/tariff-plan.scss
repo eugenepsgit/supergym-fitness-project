@@ -108,6 +108,9 @@
     line-height: 72px;
 
     &::before {
+      top: -44px;
+      left: -15px;
+      
       font-size: 80px;
       line-height: 120px;
     }
