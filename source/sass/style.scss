@@ -4,6 +4,7 @@
 @import "vendor/normalize";
 // Swiper 8.4.7
 @import "vendor/swiper";
+@import "vendor/data-accordion.scss";
 
 // Global
 // ---------------------------------
@@ -33,6 +34,8 @@
 @import "blocks/experts.scss";
 @import "blocks/advantages.scss";
 @import "blocks/promotion.scss";
+@import "blocks/faq.scss";
+@import "blocks/accordion.scss";
 
 // ---------------------------------
 
