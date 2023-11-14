@@ -262,9 +262,9 @@
           <div class="events__experts experts">
             <h3 class="experts__title">Жюри</h3>
             <div class="experts__slider">
-              <div class="swiper">
+              <div class="experts__slider-wrapper swiper">
                 <ul class="experts__list swiper-wrapper">
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide">
                     <h4 class="experts__name">Анна Павлова</h4>
                     <div class="experts__photo">
                       <picture>
@@ -285,7 +285,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide">
                     <h4 class="experts__name">Алексей Лавров</h4>
                     <div class="experts__photo">
                       <picture>
@@ -474,6 +474,7 @@
             </li>
             <li class="advantages__item advantages__item--accent">
               <div class="advantages__value">
+                <h3 class="visually-hidden">Разнообразные нагрузки</h3>
                 <p>100</p>
                 <span>Тренажеров</span>
               </div>
@@ -523,7 +524,7 @@
                     srcset="img/promotion/promotion-image-desktop@1x.webp 1x, img/promotion/promotion-image-desktop@2x.webp 2x"
                     width="280" height="482">
                   <img src="img/promotion/promotion-image-desktop@1x.jpg"
-                    source="img/promotion/promotion-image-desktop@2x.jpg 2x" width="280" height="482"
+                    srcset="img/promotion/promotion-image-desktop@2x.jpg 2x" width="280" height="482"
                     alt="Фото спортивной девушки в форме">
                 </picture>
               </div>
@@ -570,10 +571,10 @@
                       <button class="accordion__button" type="button"></button>
                     </div>
                     <div class="accordion__content" data-accordion="content">
-                        <p>
-                          При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
-                          покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                        </p>
+                      <p>
+                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                        покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                      </p>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
@@ -813,6 +814,57 @@
                 </ul>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper container">
+          <h2>Отзывы</h2>
+          <div class="reviews__slider">
+            <div class="reviews__slider-wrapper swiper">
+              <ul class="reviews__list swiper-wrapper">
+                <li class="reviews__card swiper-slide">
+                  <div class="reviews__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/reviews-orlova@1x.webp 1x, img/reviews-orlova@2x.webp 2x"
+                        width="80" height="80">
+                      <img src="img/reviews-orlova@1x.png" srcset="img/reviews-orlova@2x.png 2x" width="80" height="80"
+                        alt="Фото клиента Анны.">
+                    </picture>
+                  </div>
+                  <div class="reviews__content">
+                    <h3>Анна Орлова</h3>
+                    <p>«Хожу в Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                      персонал
+                      дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+                <li class="reviews__card swiper-slide">
+                  <div class="reviews__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/reviews-charlie@1x.webp 1x, img/reviews-charlie@2x.webp 2x"
+                        width="80" height="80">
+                      <img src="img/reviews-charlie@1x.png" srcset="img/reviews-charlie@2x.png 2x" width="80"
+                        height="80" alt="Фото клиента Чарли.">
+                    </picture>
+                  </div>
+                  <div class="reviews__content">
+                    <h3>Чарли Вэйл</h3>
+                    <p>«Тренера в Supergym это просто чудо. Индивидуальный подход к каждому клиенту. Благодаря им, я
+                      буквально, вернулся к жизни!»</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="reviews__button reviews__button--prev" type="button">
+              <svg width="18" height="35" viewbox="0 0 18 35">
+                <use href="img/sprite.svg#prev-button"></use>
+              </svg>
+            </button>
+            <button class="reviews__button reviews__button--next" type="button">
+              <svg width="18" height="35" viewbox="0 0 18 35">
+                <use href="img/sprite.svg#next-button"></use>
+              </svg>
           </div>
         </div>
       </section>

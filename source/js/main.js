@@ -5,6 +5,7 @@ import {startVideo} from './modules/play-video/play-video';
 import {initTabs} from './modules/tabs/init-tabs';
 import {sliderInit} from './modules/slider/slider-init';
 import {initAccordions} from './modules/accordion/init-accordion';
+import {sliderReviewsInit} from './modules/slider/slider-reviews-init';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     sliderInit();
     initAccordions();
+    sliderReviewsInit();
   });
 });
 
