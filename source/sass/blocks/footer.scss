@@ -11,17 +11,22 @@
   padding-bottom: 40px;
 
   @include vp-1365 {
-    padding-top: 47px;
-    padding-bottom: 43px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   @include vp-767 {
+    padding-top: 29px;
+    padding-bottom: 45px;
+
     flex-direction: column;
-    row-gap: 30px;
+    align-items: flex-start;
+
+    row-gap: 27px;
   }
 }
 
-.footer__logo {
+.footer__logo img {
   width: 109px;
   height: 24px;
 
@@ -31,43 +36,89 @@
   }
 
   @include vp-767 {
-    width: 100px;
-    height: 15px;
+    width: 90px;
+    height: 16px;
   }
 }
 
 .footer__nav {
   display: flex;
-  column-gap: 1.48vw;
-  flex-basis: 40%;
+  column-gap: 2.95vw;
+  flex-basis: 60%;
+  justify-content: center;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
 
+  transform: translate(-8px, -1px);
+
   @include vp-1365 {
-    column-gap: 1.34vw;
-    flex-basis: 61.3%;
+    column-gap: 3.95vw;
+    flex-basis: 57.7%;
+    justify-content: flex-start;
+
+    transform: translate(-1px, 0);
   }
 
   @include vp-767 {
-    margin-bottom: 25px;
+    flex-wrap: wrap;
+    column-gap: 11.14vw;
+    row-gap: 16px;
+
+    margin-bottom: 27px;
   }
 }
 
 .footer__nav-link {
-  display: inline-block;
+  position: relative;
 
-  padding: 0 10px;
+  display: inline-block;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   color: $color-default-white;
 
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background-color: transparent;
+
+    transition: 0.3s ease-in;
+  }
+
   @include vp-767 {
     line-height: 20px;
+  }
+
+  @include hover {
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+  }
+
+  &:active {
+    &::after {
+      content: none;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    outline: none;
   }
 }
 
@@ -83,6 +134,11 @@
   @include vp-1365 {
     column-gap: 1.3vw;
   }
+
+  @include vp-767 {
+    column-gap: 3.13vw;
+    align-self: center;
+  }
 }
 
 .footer__social-link {
@@ -97,4 +153,20 @@
 
   background-color: $color-default-white;
   color: #030a1a;
+
+  @include hover-focus {
+    background-color: #103aae;
+    color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-text-default;
+    color: $color-default-white;
+  }
+
+  &--disabled {
+    background-color:#d8dae0;
+    color: #030a1a;
+  }
 }

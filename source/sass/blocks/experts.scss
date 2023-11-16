@@ -61,7 +61,7 @@
     }
 
     .experts__name {
-      top: 45px;
+      top: 15.5%;
       z-index: 1;
     }
   }
@@ -110,14 +110,16 @@
   left: 0;
 
   display: none;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   width: 100%;
   height: 100%;
-  padding: 5.49vw 3.66vw 3.66vw;
+  padding: 28.7% 19% 10%;
 
   background-color: rgba(16, 38, 84, 0.89);
+
+  overflow-y: scroll;
 }
 
 .experts__specialty {

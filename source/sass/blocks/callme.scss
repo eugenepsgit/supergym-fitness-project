@@ -13,7 +13,7 @@
 }
 
 .callme__title {
-  margin: 0 0 32px;
+  margin: 0 0 22px;
 
   font-family: $ff-alumni;
   font-size: 54px;
@@ -42,7 +42,7 @@
 .callme__form {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1.95vw;
+  row-gap: 2.7vw;
 
   @include vp-1365 {
     row-gap: 3.75vw;
@@ -92,5 +92,15 @@
 
   @include vp-1365 {
     padding: 20px 32px;
+  }
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: #103aae;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-text-default;
   }
 }
