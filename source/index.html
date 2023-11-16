@@ -21,7 +21,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__wrapper container">
-        <a class="header__logo logo" href="index.html">
+        <a class="header__logo" href="index.html">
           <picture>
             <!-- <source type="image/svg+xml" media="(max-width: 767px)" srcset="img/svg/supergym.svg" width="102"
               height="22">
@@ -564,7 +564,8 @@
               <li class="faq__chapter accordion" data-tabs="element">
                 <ul class="accordion__list" data-accordion="parent">
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head" data-accordion="button">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
                       <p>
                         Как стать членом фитнес-центра?
                       </p>
@@ -575,7 +576,8 @@
                         При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
                         покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
                       </p>
-                    </div>
+                    </div></div>
+
                   </li>
                   <li class="accordion__element" data-accordion="element">
                     <div class="accordion__head">
@@ -868,9 +870,103 @@
           </div>
         </div>
       </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Как с нами связаться</h2>
+        <div class="feedback__callme callme">
+          <h2 class="callme__title">Бесплатное занятие</h2>
+          <div data-form-validate data-callback="base">
+            <form class="callme__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="callme__inputs">
+                <div class="callme__input custom-input" data-validate-type="text" data-message-base="Обязательное поле"
+                data-limitation="name" data-required>
+                <label aria-label="Введите ваше имя.">
+                  <input class="callme__name" type="text" placeholder="Имя" required>
+                </label>
+              </div>
+              <div class="callme__input custom-input" data-validate-type="phone" data-message-base="Обязательное поле" data-required>
+                <label aria-label="Введите ваш номер телефона">
+                  <input class="callme__phone" type="tel" placeholder="Телефон" required>
+                </label>
+              </div>
+              </div>
+              <button class="callme__button btn" type="submit">Отправить</button>
+            </form>
+          </div>
+
+        </div>
+        <div class="feedback__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">Адрес:</h3>
+              <address>
+                <p class="contacts__content">г. Омск, ул. 60 лет Октября, 7</p>
+              </address>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">Телефон:</h3>
+              <address>
+                <a class="contacts__content" href="tel:88005555555">8-800-555-55-55</a>
+              </address>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">График работы:</h3>
+              <p class="contacts__content">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">Email:</h3>
+              <a class="contacts__content" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__logo">
+          <img src="img/svg/supergym-footer.svg" width="109" height="24" alt="Логотип фитнес центра Supergym">
+        </div>
+        <ul class="footer__nav">
+          <li>
+            <a class="footer__nav-link" href="#">Услуги</a>
+          </li>
+          <li>
+            <a class="footer__nav-link" href="#">Абонементы</a>
+          </li>
+          <li>
+            <a class="footer__nav-link" href="#">Акции</a>
+          </li>
+          <li>
+            <a class="footer__nav-link" href="#">Тренеры</a>
+          </li>
+          <li>
+            <a class="footer__nav-link" href="#">Расписание</a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <li>
+            <a class="footer__social-link" href="https://vk.com/htmlacademy" aria-label="Мы в VK.">
+              <svg width="16" height="16" viewBox="0 0 15 12">
+                <use href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="https://ok.ru/htmlacademy" aria-label="Мы в одноклассниках.">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#icon-odnoklass"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="https://www.reddit.com" aria-label="Мы на Reddit.">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#icon-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
   <script src="js/vendor.min.js"></script>
