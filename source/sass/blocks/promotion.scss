@@ -64,9 +64,9 @@
 .promotion__item {
   display: flex;
   flex-direction: column;
-
   grid-column: 2/3;
 
+  min-height: 211px;
   padding: 1.7vw 2vw 2.4vw;
 
   border: 7px solid $color-text-default;
@@ -153,7 +153,6 @@
   @include vp-1365 {
     grid-column: unset;
 
-    min-height: 211px;
     padding: 3vw 6vw 3.7vw 3.6vw;
 
     &--special {

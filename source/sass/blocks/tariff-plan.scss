@@ -68,6 +68,10 @@
   }
 }
 
+.tariff-plan__price-content {
+  position: relative;
+}
+
 .tariff-plan__price {
   position: relative;
   z-index: 1;
@@ -84,18 +88,6 @@
   line-height: 90px;
   color: #103aae;
 
-  &::before {
-    position: absolute;
-    content: attr(data-price);
-    top: -55px;
-    left: -17px;
-    z-index: -1;
-
-    font-size: 100px;
-    line-height: 150px;
-    color: rgb(232, 232, 232, 0.48);
-  }
-
   @include vp-1365 {
     margin-bottom: 24px;
   }
@@ -106,14 +98,6 @@
 
     font-size: 48px;
     line-height: 72px;
-
-    &::before {
-      top: -44px;
-      left: -15px;
-      
-      font-size: 80px;
-      line-height: 120px;
-    }
   }
 }
 
@@ -129,6 +113,25 @@
   @include vp-767 {
     font-size: 47px;
     line-height: 47px;
+  }
+}
+
+.tariff-plan__price-shadow {
+  position: absolute;
+  top: -55px;
+  left: -17px;
+
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+  color: rgb(232, 232, 232, 0.48);
+
+  @include vp-767 {
+    top: -44px;
+    left: -15px;
+
+    font-size: 80px;
+    line-height: 120px;
   }
 }
 

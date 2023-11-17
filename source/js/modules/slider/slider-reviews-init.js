@@ -6,7 +6,6 @@ const nextButton = document.querySelector('.reviews__button--next');
 
 const sliderReviewsInit = () => {
   sliderReviews = new Swiper('.reviews__slider-wrapper', {
-    direction: 'horizontal',
     loop: false,
     slidesPerView: 1,
     spaceBetween: 800,
@@ -21,6 +20,14 @@ const sliderReviewsInit = () => {
     navigation: {
       nextEl: nextButton,
       prevEl: prevButton,
+    },
+    breakpoints: {
+      1366: {
+        allowTouchMove: false,
+      },
+      0: {
+        allowTouchMove: true,
+      },
     },
   });
 };

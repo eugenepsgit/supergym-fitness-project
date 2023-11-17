@@ -4,9 +4,8 @@ let sliderExperts;
 const prevButton = document.querySelector('.experts__button--prev');
 const nextButton = document.querySelector('.experts__button--next');
 
-const sliderInit = () => {
+const sliderExpertsInit = () => {
   sliderExperts = new Swiper('.experts__slider-wrapper', {
-    direction: 'horizontal',
     loop: true,
     slidesPerView: 4,
     spaceBetween: 40,
@@ -22,22 +21,25 @@ const sliderInit = () => {
       prevEl: prevButton,
     },
     breakpoints: {
-      0: {
-        slidesPerView: 1,
-        initialSlide: 2,
+      1366: {
+        slidesPerView: 4,
         spaceBetween: 40,
+        allowTouchMove: false,
       },
       768: {
         slidesPerView: 2,
         initialSlide: 2,
         spaceBetween: 32,
+        allowTouchMove: true,
       },
-      1366: {
-        slidesPerView: 4,
+      0: {
+        slidesPerView: 1,
+        initialSlide: 2,
         spaceBetween: 40,
+        allowTouchMove: true,
       },
     },
   });
 };
 
-export {sliderInit, sliderExperts};
+export {sliderExpertsInit, sliderExperts};

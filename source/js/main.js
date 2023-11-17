@@ -2,8 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {startVideo} from './modules/play-video/play-video';
+import {changePeriod} from './modules/tariff-toggle';
 import {initTabs} from './modules/tabs/init-tabs';
-import {sliderInit} from './modules/slider/slider-init';
+import {sliderExpertsInit} from './modules/slider/slider-experts-init';
 import {initAccordions} from './modules/accordion/init-accordion';
 import {sliderReviewsInit} from './modules/slider/slider-reviews-init';
 
@@ -27,8 +28,9 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     startVideo();
+    changePeriod();
     initTabs();
-    sliderInit();
+    sliderExpertsInit();
     initAccordions();
     sliderReviewsInit();
   });

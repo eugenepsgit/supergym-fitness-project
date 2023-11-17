@@ -23,10 +23,6 @@
       <div class="header__wrapper container">
         <a class="header__logo" href="index.html">
           <picture>
-            <!-- <source type="image/svg+xml" media="(max-width: 767px)" srcset="img/svg/supergym.svg" width="102"
-              height="22">
-            <source type="image/svg+xml" media="(max-width: 1365px)" srcset="img/svg/supergym.svg" width="111"
-              height="24"> -->
             <img src="img/svg/supergym.svg" width="120" height="26" alt="Логотип фитнес центра Supergym">
           </picture>
         </a>
@@ -42,9 +38,9 @@
             <p class="hero__location">Омск</p>
             <a class="hero__membership btn" href="#membership">Купить абонемент</a>
             <ul class="hero__classes-list">
-              <li class="hero__classes-item">Тренажёрный зал</li>
-              <li class="hero__classes-item">Групповые занятия</li>
-              <li class="hero__classes-item">Кардио-зона</li>
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
             </ul>
           </div>
           <div class="hero__present-image">
@@ -118,105 +114,61 @@
         </div>
       </section>
       <section class="tariff">
-        <div class="tariff__wrapper container" data-tabs="parent">
+        <div class="tariff__wrapper container">
           <h2 class="tariff__title" id="membership">Абонементы</h2>
-          <ul class="tariff__controls-list" data-tabs="controls">
+          <ul class="tariff__controls-list">
             <li class="tariff__controls-item">
-              <button class="tariff__control" data-tabs="control" data-index="0">1 месяц</button>
+              <button class="tariff__control tariff__control--active">1 месяц</button>
             </li>
             <li class="tariff__controls-item">
-              <button class="tariff__control" data-tabs="control" data-index="1">6 месяцев</button>
+              <button class="tariff__control">6 месяцев</button>
             </li>
             <li class="tariff__controls-item">
-              <button class="tariff__control" data-tabs="control" data-index="2">12 месяцев</button>
+              <button class="tariff__control">12 месяцев</button>
             </li>
           </ul>
-          <div class="tariff__option-list" data-tabs="content">
-            <ul class="tariff__list" data-tabs="element">
+          <div class="tariff__option-list">
+            <ul class="tariff__list">
               <li class="tariff__list-item tariff-plan">
                 <h3 class="tariff-plan__title">С тренером</h3>
                 <p class="tariff-plan__option">12 занятий</p>
-                <p class="tariff-plan__price" data-price="5000">5000
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
+                <div class="tariff-plan__price-content">
+                  <p class="tariff-plan__price">5000
+                    <span class="tariff-plan__currency">&#8381;</span>
+                  </p>
+                  <span class="tariff-plan__price-shadow"></span>
+                </div>
                 <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
               </li>
               <li class="tariff__list-item tariff-plan">
                 <h3 class="tariff-plan__title">Дневной</h3>
                 <p class="tariff-plan__option">с 8:00 до 17:00</p>
-                <p class="tariff-plan__price" data-price="1700">1700
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
+                <div class="tariff-plan__price-content">
+                  <p class="tariff-plan__price">1700
+                    <span class="tariff-plan__currency">&#8381;</span>
+                  </p>
+                  <span class="tariff-plan__price-shadow"></span>
+                </div>
                 <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
               </li>
               <li class="tariff__list-item tariff-plan">
                 <h3 class="tariff-plan__title">Полный день</h3>
                 <p class="tariff-plan__option">с 8:00 до 22:00 </p>
-                <p class="tariff-plan__price" data-price="2700">2700
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
-                <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-            <ul class="tariff__list" data-tabs="element">
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">С тренером</h3>
-                <p class="tariff-plan__option">12 занятий</p>
-                <p class="tariff-plan__price" data-price="30000">30000
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
-                <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
-              </li>
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">Дневной</h3>
-                <p class="tariff-plan__option">с 8:00 до 17:00 </p>
-                <p class="tariff-plan__price" data-price="10200">10200
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
-                <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
-              </li>
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">Полный день</h3>
-                <p class="tariff-plan__option">с 8:00 до 22:00 </p>
-                <p class="tariff-plan__price" data-price="16200">16200
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
-                <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-            <ul class="tariff__list" data-tabs="element">
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">С тренером</h3>
-                <p class="tariff-plan__option">12 занятий</p>
-                <p class="tariff-plan__price" data-price="60000">60000
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
-                <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
-              </li>
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">Дневной</h3>
-                <p class="tariff-plan__option">с 8:00 до 17:00 </p>
-                <p class="tariff-plan__price" data-price="20400">20400
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
-                <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
-              </li>
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">Полный день</h3>
-                <p class="tariff-plan__option">с 8:00 до 22:00 </p>
-                <p class="tariff-plan__price" data-price="32400">32400
-                  <span class="tariff-plan__currency">&#8381;</span>
-                </p>
+                <div class="tariff-plan__price-content">
+                  <p class="tariff-plan__price">2700
+                    <span class="tariff-plan__currency">&#8381;</span>
+                  </p>
+                  <span class="tariff-plan__price-shadow"></span>
+                </div>
                 <a class="tariff-plan__buy btn" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="tariff__spacer"></div>
         <div class="tariff__image">
           <picture>
-            <img src="img/weight-plates-desktop@1x.png" srcset="img/weight-plates-desktop@2x.png 2x" width="386"
-              height="347" alt="Красные блины для штанги.">
+            <img src="img/weight-plates-desktop@1x.png" srcset="img/weight-plates-desktop@2x.png 2x" width="287"
+              height="494">
           </picture>
         </div>
       </section>
@@ -272,7 +224,6 @@
               <div class="experts__slider-wrapper swiper">
                 <ul class="experts__list swiper-wrapper">
                   <li class="experts__card swiper-slide">
-                    <h4 class="experts__name">Анна Павлова</h4>
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -284,6 +235,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Анна Павлова</h4>
                       <p class="experts__specialty">Cosplay</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Anime otaku 3 level</li>
@@ -293,7 +245,6 @@
                     </div>
                   </li>
                   <li class="experts__card swiper-slide">
-                    <h4 class="experts__name">Алексей Лавров</h4>
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -305,6 +256,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Алексей Лавров</h4>
                       <p class="experts__specialty">MagicFlow</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Certified exorcist</li>
@@ -314,7 +266,6 @@
                     </div>
                   </li>
                   <li class="experts__card swiper-slide" tabindex="0">
-                    <h4 class="experts__name">Александр Пашков</h4>
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -326,6 +277,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Александр Пашков</h4>
                       <p class="experts__specialty">CrossFit</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Certified Level 3 Trainer</li>
@@ -335,8 +287,7 @@
                     </div>
                   </li>
                   <li class="experts__card swiper-slide" tabindex="0">
-                    <h4 class="experts__name">Мария Кетова</h4>
-                    <div class="experts__photo" data-name="Мария Кетова">
+                    <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
                           srcset="img/experts/expert-maria-ketova@1x.webp 1x, img/experts/expert-maria-ketova@2x.webp 2x"
@@ -347,6 +298,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Мария Кетова</h4>
                       <p class="experts__specialty">BodyFitness</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Мастер спорта России</li>
@@ -356,8 +308,7 @@
                     </div>
                   </li>
                   <li class="experts__card swiper-slide" tabindex="0">
-                    <h4 class="experts__name">Анна Павлова</h4>
-                    <div class="experts__photo" data-name="Анна Павлова">
+                    <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
                           srcset="img/experts/expert-anna-pavlova@1x.webp 1x, img/experts/expert-anna-pavlova@2x.webp 2x"
@@ -368,6 +319,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Анна Павлова</h4>
                       <p class="experts__specialty">Cosplay</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Anime otaku 3 level</li>
@@ -377,8 +329,7 @@
                     </div>
                   </li>
                   <li class="experts__card swiper-slide" tabindex="0">
-                    <h4 class="experts__name">Алексей Лавров</h4>
-                    <div class="experts__photo" data-name="Алексей Лавров">
+                    <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
                           srcset="img/experts/expert-alex-lavrov@1x.webp 1x, img/experts/expert-alex-lavrov@2x.webp 2x"
@@ -389,6 +340,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Алексей Лавров</h4>
                       <p class="experts__specialty">MagicFlow</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Certified ecsorcist</li>
@@ -398,8 +350,7 @@
                     </div>
                   </li>
                   <li class="experts__card swiper-slide" tabindex="0">
-                    <h4 class="experts__name">Александр Пашков</h4>
-                    <div class="experts__photo" data-name="Александр Пашков">
+                    <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
                           srcset="img/experts/expert-alexandr-pashkov@1x.webp 1x, img/experts/expert-alexandr-pashkov@2x.webp 2x"
@@ -410,6 +361,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Александр Пашков</h4>
                       <p class="experts__specialty">CrossFit</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Certified Level 3 Trainer</li>
@@ -419,8 +371,7 @@
                     </div>
                   </li>
                   <li class="experts__card swiper-slide" tabindex="0">
-                    <h4 class="experts__name">Мария Кетова</h4>
-                    <div class="experts__photo" data-name="Мария Кетова">
+                    <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
                           srcset="img/experts/expert-maria-ketova@1x.webp 1x, img/experts/expert-maria-ketova@2x.webp 2x"
@@ -431,6 +382,7 @@
                       </picture>
                     </div>
                     <div class="experts__info">
+                      <h4 class="experts__name">Мария Кетова</h4>
                       <p class="experts__specialty">BodyFitness</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Мастер спорта России</li>
@@ -572,264 +524,229 @@
                 <button class="faq__control" type="button" data-tabs="control">Правила</button>
               </li>
             </ul>
-            <ul class="faq__content-list" data-tabs="content">
-              <li class="faq__chapter accordion" data-tabs="element">
+            <div class="faq__content-list accordion" data-tabs="content">
+              <div class="accordion__item" data-tabs="element">
                 <ul class="accordion__list" data-accordion="parent">
+                  <li class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Как стать членом фитнес-центра?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+                          При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
                   <li class="accordion__element" data-accordion="element">
                     <div class="accordion__wrapper" data-accordion="button">
                       <div class="accordion__head">
-                        <p>
-                          Как стать членом фитнес-центра?
-                        </p>
-                        <button class="accordion__button" type="button"></button>
+                        <h3>Где можно посмотреть расписание?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
                       </div>
                       <div class="accordion__content" data-accordion="content">
-                        <p>
-                          При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
-                          При
-                          покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                        <p>Мы публикуем расписание онлайн-тренировок каждое воскресенье в наших социальных сетях, в VK,
+                          а также в телеграм-канале Supergym Омск @supergym_omsk</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+                          При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
                         </p>
                       </div>
                     </div>
-
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Где можно посмотреть расписание?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
-                        покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Есть кулеры в центре? Предоставляются полотенца?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
-                        покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Сколько тренеров работает в клубе и какова их квалификация?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
-                        покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
-                      </p>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Сколько тренеров работает в клубе и какова<br> их квалификация?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+                          При
+                          покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                      </div>
                     </div>
                   </li>
                 </ul>
-              </li>
-              <li class="faq__chapter accordion" data-tabs="element">
+              </div>
+              <div class="accordion__item" data-tabs="element">
                 <ul class="accordion__list" data-accordion="parent">
-                  <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Занятия с тренером входят в абонемент?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
-                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
-                        консультацию по тренажеру или технике выполнения упражнения.
-                      </p>
+                  <li class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Занятия с тренером входят в абонемент?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
+                          всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
+                          консультацию по тренажеру или технике выполнения упражнения.</p>
+                      </div>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Можно ли заморозить абонемент?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
-                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
-                        консультацию по тренажеру или технике выполнения упражнения.
-                      </p>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Можно ли заморозить абонемент?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>В течение срока действия абонемента каждый клиент может воспользоваться дополнительной опцией
+                          приостановки срока действия клубной карты, то есть «заморозкой». Минимальная длительность
+                          «заморозки» – 7 дней.</p>
+                      </div>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Есть ли лимит по посещениям тренажерного зала и групповых занятий?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
-                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
-                        консультацию по тренажеру или технике выполнения упражнения.
-                      </p>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
+                          всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
+                          консультацию по тренажеру или технике выполнения упражнения.</p>
+                      </div>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Что такое семейный доступ и доступ для друзей?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
-                        всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
-                        консультацию по тренажеру или технике выполнения упражнения.
-                      </p>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале
+                          всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
+                          консультацию по тренажеру или технике выполнения упражнения.</p>
+                      </div>
                     </div>
                   </li>
                 </ul>
-              </li>
-              <li class="faq__chapter accordion" data-tabs="element">
+              </div>
+              <div class="accordion__item" data-tabs="element">
                 <ul class="accordion__list" data-accordion="parent">
-                  <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Предлагает ли клуб услуги по консультированию по вопросам питания?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит
-                        ваши данные, цели и предложит программу питания.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Проводятся ли в клубе какие-либо мероприятия или соревнования?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит
-                        ваши данные, цели и предложит программу питания.
-                      </p>
+                  <li class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист
+                          уточнит
+                          ваши данные, цели и предложит программу питания.</p>
+                      </div>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Можно ли приобрести в центре спортивное питание?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит
-                        ваши данные, цели и предложит программу питания.
-                      </p>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>Вся информация о мероприятиях представлена на сайте. Также информацию о мероприятиях можно
+                          получить у тренеров в клубе.</p>
+                      </div>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Есть ли в центре детская комната?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>Спортивное питание Вы можете приобрести в магазине КультЛаб на территории клуба.</p>
+                      </div>
                     </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит
-                        ваши данные, цели и предложит программу питания.
-                      </p>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Есть ли в центре детская комната?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>В клубе организованы игровые зоны, пользование которыми возможно детьми в возрасте от 14 мес.
+                          до 9 лет. Время пребывания ребенка в игровой зоне составляет не более 3-х часов в течение
+                          одного
+                          дня.</p>
+                      </div>
                     </div>
                   </li>
                 </ul>
-              </li>
-              <li class="faq__chapter accordion" data-tabs="element">
+              </div>
+              <div class="accordion__item" data-tabs="element">
                 <ul class="accordion__list" data-accordion="parent">
-                  <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Есть в фитнес-центре дресс-код?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
-                        Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
-                        шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
-                        домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                      </p>
-                    </div>
-                  </li>
-                  <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Можно ли приводить с собой детей на тренировки?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
-                        Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
-                        шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
-                        домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                      </p>
+                  <li class="accordion__element is-active" data-accordion="element">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Есть в фитнес-центре дресс-код?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
+                          Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные
+                          брюки,
+                          шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
+                          домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
+                        </p>
+                      </div>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Какие дополнительные правила посещения центра?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
-                    </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
-                        Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
-                        шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
-                        домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                      </p>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>Детям до 16 лет посещать тренажерный зал и кардиозону можно только в формате группового урока
+                          или персональной тренировки. В сопровождении родителя этого делать нельзя.</p>
+                      </div>
                     </div>
                   </li>
                   <li class="accordion__element" data-accordion="element">
-                    <div class="accordion__head">
-                      <p>
-                        Нужна ли медицинская справка для посещения залов и бассейна?
-                      </p>
-                      <button class="accordion__button" type="button" data-accordion="button"></button>
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Какие дополнительные правила посещения центра?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>Полный перечень правил клуба можно найти на странице нашего сайта
+                          https://www.supergym.ru/membership/.</p>
+                      </div>
                     </div>
-                    <div class="accordion__content" data-accordion="content">
-                      <p>
-                        Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
-                        Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
-                        шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или
-                        домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
-                      </p>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <div class="accordion__wrapper" data-accordion="button">
+                      <div class="accordion__head">
+                        <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                        <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
+                      </div>
+                      <div class="accordion__content" data-accordion="content">
+                        <p>Всем членам клубов до начала тренировок мы настоятельно рекомендуем пройти медицинское
+                          обследование, так как ответственность за свое здоровье лежит на каждом из нас.</p>
+                      </div>
                     </div>
                   </li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -961,7 +878,7 @@
         <ul class="footer__social">
           <li>
             <a class="footer__social-link" href="https://vk.com/htmlacademy" aria-label="Мы в VK.">
-              <svg width="16" height="16" viewBox="0 0 15 12">
+              <svg width="16" height="16" viewBox="0 0 15 13">
                 <use href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>

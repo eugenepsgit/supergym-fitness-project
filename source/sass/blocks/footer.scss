@@ -6,45 +6,58 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 30px;
 
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @include vp-1365 {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    column-gap: 20px;
+
+    padding-top: 36px;
+    padding-bottom: 37px;
   }
 
   @include vp-767 {
-    padding-top: 29px;
+    padding-top: 18px;
     padding-bottom: 45px;
 
     flex-direction: column;
     align-items: flex-start;
 
-    row-gap: 27px;
+    row-gap: 16px;
   }
 }
 
-.footer__logo img {
-  width: 109px;
-  height: 24px;
+.footer__logo {
+  padding: 10px;
+  transform: translate(-10px, 0);
 
-  @include vp-1365 {
-    width: 99px;
-    height: 22px;
+  img {
+    width: 109px;
+    height: 24px;
   }
 
-  @include vp-767 {
-    width: 90px;
-    height: 16px;
+    @include vp-1365 {
+    transform: translate(-10px, 1px);
+
+    img {
+      width: 98px;
+      height: 22px;
+    }
   }
+
+    @include vp-767 {
+      img {
+      width: 90px;
+      height: 16px;
+    }
+    }
 }
 
 .footer__nav {
   display: flex;
-  column-gap: 2.95vw;
-  flex-basis: 60%;
+  column-gap: 1.5vw;
   justify-content: center;
 
   margin: 0;
@@ -52,22 +65,23 @@
 
   list-style: none;
 
-  transform: translate(-8px, -1px);
+  transform: translate(-18px, 1px);
 
   @include vp-1365 {
-    column-gap: 3.95vw;
-    flex-basis: 57.7%;
+    column-gap: 1.35vw;
     justify-content: flex-start;
 
-    transform: translate(-1px, 0);
+    transform: translate(-12px, 1px);
   }
 
   @include vp-767 {
     flex-wrap: wrap;
-    column-gap: 11.14vw;
-    row-gap: 16px;
+    column-gap: 4.9vw;
+    row-gap: 10px;
 
-    margin-bottom: 27px;
+    margin-bottom: 34px;
+
+    transform: translate(-10px, 0)
   }
 }
 
@@ -75,6 +89,8 @@
   position: relative;
 
   display: inline-block;
+
+  padding: 5px 10px;
 
   font-size: 14px;
   font-weight: 400;
@@ -84,9 +100,9 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: -5px;
-    left: 0;
-    right: 0;
+    bottom: 0;
+    left: 9px;
+    right: 10px;
 
     height: 1px;
 
@@ -106,7 +122,9 @@
   }
 
   @include focus {
-    outline: 1px solid $color-default-white;
+    padding: 4px 9px;
+    border: 1px solid $color-default-white;
+    outline: none;
   }
 
   &:active {
@@ -166,7 +184,7 @@
   }
 
   &--disabled {
-    background-color:#d8dae0;
+    background-color: #d8dae0;
     color: #030a1a;
   }
 }

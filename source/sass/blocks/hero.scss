@@ -6,25 +6,28 @@
   display: flex;
   align-items: center;
   column-gap: 5vw;
+
   padding-bottom: 120px;
 
   color: $color-default-white;
 
   @include vp-1365 {
     column-gap: 3.9vw;
+
     padding-bottom: 100px;
   }
 
   @include vp-767 {
     column-gap: 0;
+
     padding-top: 35px;
     padding-bottom: 68px;
   }
 }
 
 .hero__text-content {
-  flex-basis: 28.2vw;
   display: grid;
+  flex-basis: 28.2vw;
   column-gap: 1.7vw;
 
   @include vp-1365 {
@@ -39,9 +42,9 @@
 }
 
 .hero__title {
+  grid-area: 2/2/3/3;
   margin: 0;
   margin-bottom: 50px;
-  grid-area: 2/2/3/3;
 
   font-family: $ff-alumni;
   font-weight: 800;
@@ -67,9 +70,10 @@
 }
 
 .hero__location {
+  grid-area: 1/2/2/3;
+
   margin: 0;
   margin-bottom: 10px;
-  grid-area: 1/2/2/3;
 
   font-family: $ff-alumni;
   font-weight: 600;
@@ -96,6 +100,7 @@
 
 .hero__classes-list {
   grid-area: 1/1/4/2;
+
   padding: 0;
   margin: auto 0;
 
@@ -109,12 +114,10 @@
   }
 }
 
-.hero__classes-item {
-}
-
 .hero__membership {
-  width: fit-content;
   grid-area: 3/2/4/3;
+
+  width: fit-content;
   margin-left: auto;
 
   font-size: 12px;
@@ -124,12 +127,15 @@
 
   @include vp-1365 {
     width: max-content;
+
     font-weight: 400;
   }
 
   @include vp-767 {
     grid-area: 3/1/4/3;
+
     width: 100%;
+
     text-align: center;
     font-weight: 700;
   }

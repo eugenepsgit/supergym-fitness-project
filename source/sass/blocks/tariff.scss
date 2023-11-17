@@ -2,8 +2,6 @@
   position: relative;
 
   background-color: #f8f9fc;
-
-  overflow: hidden;
 }
 
 .tariff__wrapper {
@@ -107,6 +105,15 @@
   background-color: transparent;
   color: $color-text-transparent;
 
+  cursor: pointer;
+  transition: 0.5s;
+
+  &--active {
+    border-bottom: solid 2px #ed0233;
+
+    color: $color-text-default;
+  }
+
   @include vp-767 {
     padding-bottom: 15px;
   }
@@ -171,13 +178,13 @@
 
 .tariff__image {
   position: absolute;
-  bottom: -4px;
-  right: -141px;
-
-  width: 386px;
-  height: 347px;
+  bottom: -149px;
+  right: 0;
 }
 
 .tariff__image img {
+  width: 287px;
+  height: 494px;
+
   object-fit: cover;
 }
