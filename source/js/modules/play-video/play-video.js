@@ -3,8 +3,6 @@ const playerWrapper = document.querySelector('.presentation__video');
 const player = playerWrapper.querySelector('iframe');
 const poster = playerWrapper.querySelector('img');
 
-
-
 const startVideo = () => {
   playBtn.addEventListener('click', function () {
     poster.style.display = 'none';

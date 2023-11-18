@@ -5,7 +5,7 @@
 .hero__wrapper {
   display: flex;
   align-items: center;
-  column-gap: 5vw;
+  column-gap: 5.1vw;
 
   padding-bottom: 120px;
 
@@ -120,45 +120,16 @@
   width: fit-content;
   margin-left: auto;
 
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-  letter-spacing: 0.6px;
-
   @include vp-1365 {
-    width: max-content;
-
-    font-weight: 400;
+    width: 100%;
   }
 
   @include vp-767 {
     grid-area: 3/1/4/3;
-
-    width: 100%;
-
-    text-align: center;
-    font-weight: 700;
-  }
-
-  @include hover-focus {
-    background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-    border-image-slice: 1;
-
-    color: $color-default-white;
-  }
-
-  &:active {
-    background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-    border-image-slice: 1;
-
-    color: rgba(255, 255, 255, 0.7)
   }
 }
 
 .hero__present-image {
-
   img {
     width: 100%;
     object-fit: cover;

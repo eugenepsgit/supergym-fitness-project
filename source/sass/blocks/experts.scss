@@ -1,5 +1,5 @@
 .experts__title {
-  margin: 0 0 45px;
+  margin: 0 0 46px;
 
   font-family: $ff-alumni;
   font-size: 54px;
@@ -50,7 +50,7 @@
   @include vp-1365 {
     height: 38.3vw;
 
-    &:active {
+    &--active {
       .experts__info {
         opacity: 1;
 

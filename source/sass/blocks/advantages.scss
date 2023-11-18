@@ -7,12 +7,12 @@
   flex-direction: column;
   align-items: center;
 
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 119px;
+  padding-bottom: 124px;
 
 
   h2 {
-    margin: 0 0 50px;
+    margin: 0 0 51px;
 
     font-family: $ff-alumni;
     font-size: 54px;
@@ -126,7 +126,6 @@
   }
 
   @include vp-767 {
-
     h3 {
       font-size: 18px;
     }
@@ -155,7 +154,6 @@
 
     background-image: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
     background-clip: text;
-
   }
 
   span {
@@ -168,7 +166,6 @@
   }
 
   @include vp-767 {
-
     p {
       font-size: 64px;
       line-height: 64px;
@@ -265,47 +262,46 @@
   }
 }
 
-  .advantages__item--accent .advantages__value {
+.advantages__item--accent .advantages__value {
+  p {
+    row-gap: 12px;
 
+    font-weight: 700;
+    color: $color-default-white;
+
+    background-image: none;
+  }
+
+  span {
+    margin-top: 12px;
+
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $color-default-white;
+  }
+
+  @include vp-1365 {
+    span {
+      margin-top: 25px;
+
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  @include vp-767 {
     p {
-      row-gap: 12px;
-
-      color: $color-default-white;
-
-      background-image: none;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 64px;
     }
 
     span {
-      margin-top: 12px;
+      margin-top: 5px;
 
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 26px;
-      color: $color-default-white;
-    }
-
-    @include vp-1365 {
-      span {
-        margin-top: 25px;
-
-        font-size: 24px;
-        line-height: 24px;
-      }
-    }
-
-    @include vp-767 {
-
-      p {
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 64px;
-      }
-
-      span {
-        margin-top: 5px;
-
-        font-size: 22px;
-        line-height: 22px;
-      }
+      font-size: 22px;
+      line-height: 22px;
     }
   }
+}
