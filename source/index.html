@@ -20,17 +20,17 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="header__wrapper container">
-        <a class="header__logo" href="index.html">
-          <picture>
-            <img src="img/svg/supergym.svg" width="120" height="26" alt="Логотип фитнес центра Supergym">
-          </picture>
-        </a>
-        <a class="header__contacts" href="tel:88005555555">8-800-555-55-55</a>
-      </div>
-    </header>
-    <main>
+    <div data-test="hero">
+      <header class="header">
+        <div class="header__wrapper container">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <img src="img/svg/supergym.svg" width="120" height="26" alt="Логотип фитнес центра Supergym.">
+            </picture>
+          </a>
+          <a class="header__contacts" href="tel:88005555555">8-800-555-55-55</a>
+        </div>
+      </header>
       <section class="hero">
         <h1 class="visually-hidden">Supergym - фитнес центр в Омске</h1>
         <div class="hero__wrapper container">
@@ -55,13 +55,14 @@
                 srcset="img/hero/hero-img-tablet@1x.png 1x, img/hero/hero-img-tablet@2x.png 2x" width="324"
                 height="390">
               <img src="img/hero/hero-img-desk@1x.png" srcset="img/hero/hero-img-desk@2x.png 2x" width="500"
-                height="524" alt="Человек-символ Supergym">
+                height="524" alt="Человек-символ Supergym.">
             </picture>
           </div>
         </div>
       </section>
-
-      <section class="presentation">
+    </div>
+    <main>
+      <section data-test="about" class="presentation">
         <div class="presentation__wrapper container">
           <div class="presentation__text-content">
             <h2>Тренажерный зал</h2>
@@ -87,19 +88,19 @@
                   srcset="img/presentation/gym-photo@1x.webp 1x, img/presentation/gym-photo@2x.webp 2x" width="660"
                   height="401">
                 <img src="img/presentation/gym-photo@1x.jpg" srcset="img/presentation/gym-photo@2x.jpg 2x" width="660"
-                  height="401" alt="Обзорное фото тренажерного зала ">
+                  height="401" alt="Обзорное фото тренажерного зала.">
               </picture>
             </div>
             <div class="presentation__video presentation__video--overlay">
               <picture>
                 <source type="image/webp" media="(max-width:767px)"
-                  srcset="img/presentation/gym-tour-static-mobile@1x.webp 1x, img/presentation/gym-tour-static-mobile@2x 2x"
+                  srcset="img/presentation/gym-tour-static-mobile@1x.webp 1x, img/presentation/gym-tour-static-mobile@2x.webp 2x"
                   width="320" height="167">
                 <source type="image/webp"
                   srcset="img/presentation/gym-tour-static@1x.webp 1x, img/presentation/gym-tour-static@2x.webp 2x"
                   width="364" height="228">
                 <img src="img/presentation/gym-tour-static@1x.jpg" srcset="img/presentation/gym-tour-static@2x.jpg 2x"
-                  width="364" height="228" alt="Постер для обзорного видео">
+                  width="364" height="228" alt="Постер для обзорного видео.">
               </picture>
               <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=hKFPFaEpaZpkiek7"
                 title="Бесплатные интерактивные онлайн-курсы." frameborder="0"
@@ -114,7 +115,7 @@
           </div>
         </div>
       </section>
-      <section class="tariff">
+      <section data-test="price" class="tariff">
         <div class="tariff__wrapper container">
           <h2 class="tariff__title" id="membership">Абонементы</h2>
           <ul class="tariff__controls-list">
@@ -175,7 +176,7 @@
           </picture>
         </div>
       </section>
-      <section class="events">
+      <section data-test="games" class="events">
         <h2 class="visually-hidden">Мероприятия организованные нашим фитнес-центром</h2>
         <div class="events__wrapper container">
           <div class="events__poster poster">
@@ -234,7 +235,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-anna-pavlova@1x.jpg"
                           srcset="img/experts/expert-anna-pavlova@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Анны Павловой">
+                          alt="Фото члена жюри Анны Павловой.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -255,7 +256,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-alex-lavrov@1x.jpg"
                           srcset="img/experts/expert-alex-lavrov@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Алексея Лаврова">
+                          alt="Фото члена жюри Алексея Лаврова.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -276,7 +277,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-alexandr-pashkov@1x.jpg"
                           srcset="img/experts/expert-alexandr-pashkov@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Александра Пашкова">
+                          alt="Фото члена жюри Александра Пашкова.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -297,7 +298,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-maria-ketova@1x.jpg"
                           srcset="img/experts/expert-maria-ketova@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Марии Кетовой">
+                          alt="Фото члена жюри Марии Кетовой.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -318,7 +319,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-anna-pavlova@1x.jpg"
                           srcset="img/experts/expert-anna-pavlova@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Анны Павловой">
+                          alt="Фото члена жюри Анны Павловой.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -339,7 +340,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-alex-lavrov@1x.jpg"
                           srcset="img/experts/expert-alex-lavrov@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Алексея Лаврова">
+                          alt="Фото члена жюри Алексея Лаврова.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -360,7 +361,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-alexandr-pashkov@1x.jpg"
                           srcset="img/experts/expert-alexandr-pashkov@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Александра Пашкова">
+                          alt="Фото члена жюри Александра Пашкова.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -381,7 +382,7 @@
                           width="260" height="294">
                         <img src="img/experts/expert-maria-ketova@1x.jpg"
                           srcset="img/experts/expert-maria-ketova@2x.jpg 2x" width="260" height="294"
-                          alt="Фото члена жюри Марии Кетовой">
+                          alt="Фото члена жюри Марии Кетовой.">
                       </picture>
                     </div>
                     <div class="experts__info">
@@ -410,7 +411,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section data-test="features" class="advantages">
         <div class="advantages__wrapper container">
           <h2>Наши преимущества</h2>
           <ul class="advantages__list">
@@ -470,7 +471,7 @@
           </ul>
         </div>
       </section>
-      <section class="promotion">
+      <section data-test="offers" class="promotion">
         <div class="promotion__wrapper container">
           <h2>Акции</h2>
           <ul class="promotion__list">
@@ -492,13 +493,13 @@
                     width="280" height="482">
                   <img src="img/promotion/promotion-image-desktop@1x.jpg"
                     srcset="img/promotion/promotion-image-desktop@2x.jpg 2x" width="280" height="482"
-                    alt="Фото спортивной девушки в форме">
+                    alt="Фото спортивной девушки в форме.">
                 </picture>
               </div>
             </li>
             <li class="promotion__item">
               <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+              <p>Приведи друга, получи абонемент в подарок</p>
               <a href="#">Подробнее</a>
             </li>
             <li class="promotion__item">
@@ -509,7 +510,7 @@
           </ul>
         </div>
       </section>
-      <section class="faq">
+      <section data-test="faq" class="faq">
         <div class="faq__wrapper container">
           <h2>Вопросы и ответы</h2>
           <div class="faq__container" data-tabs="parent">
@@ -753,7 +754,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section data-test="reviews" class="reviews">
         <div class="reviews__wrapper container">
           <h2>Отзывы</h2>
           <div class="reviews__slider">
@@ -770,7 +771,7 @@
                   </div>
                   <div class="reviews__content">
                     <h3>Анна Орлова</h3>
-                    <p>«Хожу в Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                    <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
                       персонал
                       дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                   </div>
@@ -805,6 +806,7 @@
           </div>
         </div>
       </section>
+    <footer data-test="footer">
       <section class="feedback">
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <div class="feedback__callme callme">
@@ -820,7 +822,7 @@
                   </div>
                   <div class="callme__input custom-input" data-validate-type="phone" data-message-base="Обязательное поле"
                     data-required>
-                    <label aria-label="Введите ваш номер телефона">
+                    <label aria-label="Введите ваш номер телефона.">
                       <input type="tel" placeholder="Телефон" autocomplete="off" required>
                     </label>
                   </div>
@@ -853,28 +855,30 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <div class="footer">
       <div class="footer__wrapper container">
         <a class="footer__logo" href="#">
-          <img src="img/svg/supergym-footer.svg" width="109" height="24" alt="Логотип фитнес центра Supergym">
+          <img src="img/svg/supergym-footer.svg" width="109" height="24" alt="Логотип фитнес центра Supergym.">
         </a>
-        <ul class="footer__nav">
-          <li>
-            <a class="footer__nav-link" href="#">Услуги</a>
-          </li>
-          <li>
-            <a class="footer__nav-link" href="#">Абонементы</a>
-          </li>
-          <li>
-            <a class="footer__nav-link" href="#">Акции</a>
-          </li>
-          <li>
-            <a class="footer__nav-link" href="#">Тренеры</a>
-          </li>
-          <li>
-            <a class="footer__nav-link" href="#">Расписание</a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a class="footer__nav-link" href="#">Услуги</a>
+            </li>
+            <li>
+              <a class="footer__nav-link" href="#">Абонементы</a>
+            </li>
+            <li>
+              <a class="footer__nav-link" href="#">Акции</a>
+            </li>
+            <li>
+              <a class="footer__nav-link" href="#">Тренеры</a>
+            </li>
+            <li>
+              <a class="footer__nav-link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="footer__social">
           <li>
             <a class="footer__social-link" href="https://vk.com/htmlacademy" aria-label="Мы в VK.">
@@ -899,10 +903,10 @@
           </li>
         </ul>
       </div>
+    </div>
     </footer>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>

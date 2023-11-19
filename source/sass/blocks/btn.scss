@@ -16,6 +16,7 @@
   text-align: center;
 
   transition: opacity $trans-default;
+  cursor: pointer;
   user-select: none;
 
   @include vp-1365 {
