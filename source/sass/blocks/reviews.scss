@@ -231,7 +231,7 @@
     outline: none;
   }
 
-  @include active {
+&:active {
     background-color: $color-text-default;
 
     svg {

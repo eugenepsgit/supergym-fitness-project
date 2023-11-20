@@ -1,11 +1,11 @@
 import Swiper from '../../vendor/swiper';
 
 let sliderExperts;
-const prevButton = document.querySelector('.experts__button--prev');
-const nextButton = document.querySelector('.experts__button--next');
+const prevButton = document.querySelector('[data-slider="prev-expert"]');
+const nextButton = document.querySelector('[data-slider="next-expert"]');
 
 const sliderExpertsInit = () => {
-  sliderExperts = new Swiper('.experts__slider-wrapper', {
+  sliderExperts = new Swiper('[data-slider="experts-slider"]', {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 40,

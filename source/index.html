@@ -8,16 +8,15 @@
   <meta name="description" content="fitness project">
   <title>Supergym Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
   <link rel="preload" href="fonts/alumni-sans-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-800.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/rouble.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
 </head>
-
 <body>
   <div class="wrapper">
     <div data-test="hero">
@@ -32,10 +31,10 @@
         </div>
       </header>
       <section class="hero">
-        <h1 class="visually-hidden">Supergym - фитнес центр в Омске</h1>
+        <h1 class="visually-hidden">Supergym - фитнес центр</h1>
         <div class="hero__wrapper container">
           <div class="hero__text-content">
-            <p class="hero__title">Фитнес<br> центр</p>
+            <p class="hero__title">Фитнес<br>центр</p>
             <p class="hero__location">Омск</p>
             <a class="hero__membership btn" href="#membership">Купить абонемент</a>
             <ul class="hero__classes-list">
@@ -62,17 +61,16 @@
       </section>
     </div>
     <main>
-      <section data-test="about" class="presentation">
+      <section class="presentation" data-test="about">
         <div class="presentation__wrapper container">
           <div class="presentation__text-content">
             <h2>Тренажерный зал</h2>
             <p>Просторный зал площадью 900 кв/м</p>
             <div class="presentation__desc">
               <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-                Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-              </p>
+                Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
               <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
-                есть несколько оборудованных залов для различных видов групповых занятий. </p>
+                есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
           </div>
           <div class="presentation__media-content">
@@ -91,7 +89,7 @@
                   height="401" alt="Обзорное фото тренажерного зала.">
               </picture>
             </div>
-            <div class="presentation__video presentation__video--overlay">
+            <div class="presentation__video presentation__video--overlay" data-video="container">
               <picture>
                 <source type="image/webp" media="(max-width:767px)"
                   srcset="img/presentation/gym-tour-static-mobile@1x.webp 1x, img/presentation/gym-tour-static-mobile@2x.webp 2x"
@@ -102,11 +100,8 @@
                 <img src="img/presentation/gym-tour-static@1x.jpg" srcset="img/presentation/gym-tour-static@2x.jpg 2x"
                   width="364" height="228" alt="Постер для обзорного видео.">
               </picture>
-              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=hKFPFaEpaZpkiek7"
-                title="Бесплатные интерактивные онлайн-курсы." frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <button class="presentation__play-button" aria-label="Воспроизвести видео.">
+              <button class="presentation__play-button" type="button" aria-label="Воспроизвести видео."
+                data-video="play-button">
                 <svg width="13" height="15" viewbox="0 0 13 15">
                   <use href="img/sprite.svg#play-button"></use>
                 </svg>
@@ -115,73 +110,72 @@
           </div>
         </div>
       </section>
-      <section data-test="price" class="tariff">
+      <section class="tariff" data-test="price">
         <div class="tariff__wrapper container">
           <h2 class="tariff__title" id="membership">Абонементы</h2>
           <ul class="tariff__controls-list">
             <li>
-              <button class="tariff__control tariff__control--active">1 месяц</button>
+              <button class="tariff__control is-active" type="button" data-price="control">1 месяц</button>
             </li>
             <li>
-              <button class="tariff__control">6 месяцев</button>
+              <button class="tariff__control" type="button" data-price="control">6 месяцев</button>
             </li>
             <li>
-              <button class="tariff__control">12 месяцев</button>
+              <button class="tariff__control" type="button" data-price="control">12 месяцев</button>
             </li>
           </ul>
-            <ul class="tariff__list">
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">С тренером</h3>
-                <p class="tariff-plan__option">12 занятий</p>
-                <div class="tariff-plan__price-content">
-                  <p class="tariff-plan__price">5000
-                    <span class="tariff-plan__currency">&#8381;</span>
-                  </p>
-                  <span class="tariff-plan__price-shadow"></span>
-                </div>
-                <a class="tariff-plan__buy btn btn--accent" href="#">Купить абонемент</a>
-              </li>
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">Дневной</h3>
-                <p class="tariff-plan__option">с 8:00 до 17:00</p>
-                <div class="tariff-plan__price-content">
-                  <p class="tariff-plan__price">1700
-                    <span class="tariff-plan__currency">&#8381;</span>
-                  </p>
-                  <span class="tariff-plan__price-shadow"></span>
-                </div>
-                <a class="tariff-plan__buy btn btn--accent" href="#">Купить абонемент</a>
-              </li>
-              <li class="tariff__list-item tariff-plan">
-                <h3 class="tariff-plan__title">Полный день</h3>
-                <p class="tariff-plan__option">с 8:00 до 22:00 </p>
-                <div class="tariff-plan__price-content">
-                  <p class="tariff-plan__price">2700
-                    <span class="tariff-plan__currency">&#8381;</span>
-                  </p>
-                  <span class="tariff-plan__price-shadow"></span>
-                </div>
-                <a class="tariff-plan__buy btn btn--accent" href="#">Купить абонемент</a>
-              </li>
-            </ul>
+          <ul class="tariff__list">
+            <li class="tariff__list-item tariff-plan" data-price="tariff-plan">
+              <h3 class="tariff-plan__title">С тренером</h3>
+              <p class="tariff-plan__option tariff-plan__option--dark">12 занятий</p>
+              <div class="tariff-plan__price-content">
+                <p class="tariff-plan__price" data-price="value">5000
+                  <span class="tariff-plan__currency">&#8381;</span>
+                </p>
+                <span class="tariff-plan__price-shadow" data-price="shadow"></span>
+              </div>
+              <a class="tariff-plan__buy btn btn--accent" href="#">Купить абонемент</a>
+            </li>
+            <li class="tariff__list-item tariff-plan" data-price="tariff-plan">
+              <h3 class="tariff-plan__title">Дневной</h3>
+              <p class="tariff-plan__option">с 8:00 до 17:00</p>
+              <div class="tariff-plan__price-content">
+                <p class="tariff-plan__price" data-price="value">1700
+                  <span class="tariff-plan__currency">&#8381;</span>
+                </p>
+                <span class="tariff-plan__price-shadow" data-price="shadow"></span>
+              </div>
+              <a class="tariff-plan__buy btn btn--accent" href="#">Купить абонемент</a>
+            </li>
+            <li class="tariff__list-item tariff-plan" data-price="tariff-plan">
+              <h3 class="tariff-plan__title">Полный день</h3>
+              <p class="tariff-plan__option">с 8:00 до 22:00</p>
+              <div class="tariff-plan__price-content">
+                <p class="tariff-plan__price" data-price="value">2700
+                  <span class="tariff-plan__currency">&#8381;</span>
+                </p>
+                <span class="tariff-plan__price-shadow" data-price="shadow"></span>
+              </div>
+              <a class="tariff-plan__buy btn btn--accent" href="#">Купить абонемент</a>
+            </li>
+          </ul>
         </div>
         <div class="tariff__image">
           <picture>
-            <source type="image/webp" media="(max-width:1365px)"
-              srcset="img/weight-plates-tablet@1x.webp 1x, img/weight-plates-tablet@2x.webp 2x" width="327" height="423">
-            <source type="image/webp" srcset="img/weight-plates-desktop@1x.webp 1x, img/weight-plates-desktop@2x.webp 2x"
-              width="287" height="494">
-            <img src="img/weight-plates-desktop@1x.png" srcset="img/weight-plates-desktop@2x.png 2x" width="287"
+            <source type="image/webp"
+              srcset="img/weight-plates@1x.webp 1x, img/weight-plates@2x.webp 2x" width="470"
               height="494">
+              <img src="img/weight-plates@1x.png" srcset="img/weight-plates@2x.png 2x" width="470"
+              height="494" alt="">
           </picture>
         </div>
       </section>
-      <section data-test="games" class="events">
+      <section class="events" data-test="games">
         <h2 class="visually-hidden">Мероприятия организованные нашим фитнес-центром</h2>
         <div class="events__wrapper container">
           <div class="events__poster poster">
             <div class="poster__text-content">
-              <p class="poster__name">Super<br>games</p>
+              <p class="poster__name">Super games</p>
               <p class="poster__subname">Ежегодные соревнования по CrossFit</p>
               <dl class="poster__list">
                 <div class="poster__item">
@@ -225,9 +219,9 @@
           <div class="events__experts experts">
             <h3 class="experts__title">Жюри</h3>
             <div class="experts__slider">
-              <div class="experts__slider-wrapper swiper">
+              <div class="swiper" data-slider="experts-slider">
                 <ul class="experts__list swiper-wrapper">
-                  <li class="experts__card swiper-slide">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -248,7 +242,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -269,7 +263,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -285,12 +279,12 @@
                       <p class="experts__specialty">CrossFit</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Certified Level 3 Trainer</li>
-                        <li class="experts__biography-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="experts__biography-item">Победитель чемпионата России по CrossFit</li>
                         <li class="experts__biography-item">Опыт — 6 лет</li>
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -311,7 +305,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -332,7 +326,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -353,7 +347,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -369,12 +363,12 @@
                       <p class="experts__specialty">CrossFit</p>
                       <ul class="experts__biography">
                         <li class="experts__biography-item">Certified Level 3 Trainer</li>
-                        <li class="experts__biography-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="experts__biography-item">Победитель чемпионата России по CrossFit</li>
                         <li class="experts__biography-item">Опыт — 6 лет</li>
                       </ul>
                     </div>
                   </li>
-                  <li class="experts__card swiper-slide" tabindex="0">
+                  <li class="experts__card swiper-slide" data-slider="expert-slide">
                     <div class="experts__photo">
                       <picture>
                         <source type="image/webp"
@@ -397,12 +391,14 @@
                   </li>
                 </ul>
               </div>
-              <button class="experts__button experts__button--prev" type="button">
+              <button class="experts__button experts__button--prev" type="button" data-slider="prev-expert">
+                <span class="visually-hidden">Предыдущий слайд</span>
                 <svg width="18" height="35" viewbox="0 0 18 35">
                   <use href="img/sprite.svg#prev-button"></use>
                 </svg>
               </button>
-              <button class="experts__button experts__button--next" type="button">
+              <button class="experts__button experts__button--next" type="button" data-slider="next-expert">
+                <span class="visually-hidden">Следующий слайд</span>
                 <svg width="18" height="35" viewbox="0 0 18 35">
                   <use href="img/sprite.svg#next-button"></use>
                 </svg>
@@ -411,7 +407,7 @@
           </div>
         </div>
       </section>
-      <section data-test="features" class="advantages">
+      <section class="advantages" data-test="features">
         <div class="advantages__wrapper container">
           <h2>Наши преимущества</h2>
           <ul class="advantages__list">
@@ -471,7 +467,7 @@
           </ul>
         </div>
       </section>
-      <section data-test="offers" class="promotion">
+      <section class="promotion" data-test="offers">
         <div class="promotion__wrapper container">
           <h2>Акции</h2>
           <ul class="promotion__list">
@@ -510,7 +506,7 @@
           </ul>
         </div>
       </section>
-      <section data-test="faq" class="faq">
+      <section class="faq" data-test="faq">
         <div class="faq__wrapper container">
           <h2>Вопросы и ответы</h2>
           <div class="faq__container" data-tabs="parent">
@@ -534,7 +530,7 @@
                   <li class="accordion__element is-active" data-accordion="element">
                     <div class="accordion__wrapper" data-accordion="button">
                       <div class="accordion__head">
-                        <h3>Как стать членом фитнес-центра?</h3>
+                        <h3>Как стать членом <span>фитнес-центра</span>?</h3>
                         <button class="accordion__button" type="button" aria-label="Показать содержимое."></button>
                       </div>
                       <div class="accordion__content" data-accordion="content">
@@ -754,11 +750,11 @@
           </div>
         </div>
       </section>
-      <section data-test="reviews" class="reviews">
+      <section class="reviews" data-test="reviews">
         <div class="reviews__wrapper container">
           <h2>Отзывы</h2>
           <div class="reviews__slider">
-            <div class="reviews__slider-wrapper swiper">
+            <div class="swiper" data-slider="reviews-slider">
               <ul class="reviews__list swiper-wrapper">
                 <li class="reviews__card swiper-slide">
                   <div class="reviews__img">
@@ -781,7 +777,7 @@
                     <picture>
                       <source type="image/webp" srcset="img/reviews-charlie@1x.webp 1x, img/reviews-charlie@2x.webp 2x"
                         width="80" height="80">
-                      <img src="img/reviews-charlie@1x.png" srcset="img/reviews-charlie@2x.png 2x" width="80"
+                      <img src="img/reviews-charlie@1x.jpg" srcset="img/reviews-charlie@2x.jpg 2x" width="80"
                         height="80" alt="Фото клиента Чарли.">
                     </picture>
                   </div>
@@ -793,12 +789,14 @@
                 </li>
               </ul>
             </div>
-            <button class="reviews__button reviews__button--prev" type="button">
+            <button class="reviews__button reviews__button--prev" type="button" data-slider="prev-review">
+              <span class="visually-hidden">Предыдущий слайд</span>
               <svg width="18" height="35" viewbox="0 0 18 35">
                 <use href="img/sprite.svg#prev-button"></use>
               </svg>
             </button>
-            <button class="reviews__button reviews__button--next" type="button">
+            <button class="reviews__button reviews__button--next" type="button" data-slider="next-review">
+              <span class="visually-hidden">Следующий слайд</span>
               <svg width="18" height="35" viewbox="0 0 18 35">
                 <use href="img/sprite.svg#next-button"></use>
               </svg>
@@ -806,6 +804,7 @@
           </div>
         </div>
       </section>
+    </main>
     <footer data-test="footer">
       <section class="feedback">
         <h2 class="visually-hidden">Как с нами связаться</h2>
@@ -813,21 +812,21 @@
           <h3 class="callme__title">Бесплатное занятие</h3>
           <div data-form-validate data-callback="base">
             <form action="https://echo.htmlacademy.ru" method="post">
-                <div class="callme__inputs">
-                  <div class="callme__input custom-input" data-validate-type="text" data-message-base="Обязательное поле"
-                    data-limitation="name" data-required>
-                    <label aria-label="Введите ваше имя.">
-                      <input type="text" placeholder="Имя" autocomplete="off" required>
-                    </label>
-                  </div>
-                  <div class="callme__input custom-input" data-validate-type="phone" data-message-base="Обязательное поле"
-                    data-required>
-                    <label aria-label="Введите ваш номер телефона.">
-                      <input type="tel" placeholder="Телефон" autocomplete="off" required>
-                    </label>
-                  </div>
+              <div class="callme__inputs">
+                <div class="callme__input custom-input" data-validate-type="text" data-message-base="Обязательное поле"
+                  data-limitation="name" data-required>
+                  <label aria-label="Введите ваше имя.">
+                    <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                  </label>
                 </div>
-                  <button class="callme__button btn" type="submit">Отправить</button>
+                <div class="callme__input custom-input" data-validate-type="phone" data-message-base="Обязательное поле"
+                  data-required>
+                  <label aria-label="Введите ваш номер телефона.">
+                    <input type="tel" name="phone" placeholder="Телефон" autocomplete="off" required>
+                  </label>
+                </div>
+              </div>
+              <button class="callme__button btn" type="submit">Отправить</button>
             </form>
           </div>
 
@@ -837,11 +836,11 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <h4 class="contacts__subtitle">Адрес:</h4>
-                <p class="contacts__content">г. Омск, ул. 60 лет Октября, 7</p>
+              <p class="contacts__content">г. Омск, ул. 60 лет Октября, 7</p>
             </li>
             <li class="contacts__item">
               <h4 class="contacts__subtitle">Телефон:</h4>
-                <a class="contacts__content" href="tel:88005555555">8-800-555-55-55</a>
+              <a class="contacts__content" href="tel:88005555555">8-800-555-55-55</a>
             </li>
             <li class="contacts__item">
               <h4 class="contacts__subtitle">График работы:</h4>
@@ -854,59 +853,59 @@
           </ul>
         </div>
       </section>
-    </main>
-    <div class="footer">
-      <div class="footer__wrapper container">
-        <a class="footer__logo" href="#">
-          <img src="img/svg/supergym-footer.svg" width="109" height="24" alt="Логотип фитнес центра Supergym.">
-        </a>
-        <nav>
-          <ul class="footer__nav">
+      <div class="footer">
+        <div class="footer__wrapper container">
+          <a class="footer__logo" href="#">
+            <img src="img/svg/supergym-footer.svg" width="109" height="24" alt="Логотип фитнес центра Supergym.">
+          </a>
+          <nav>
+            <ul class="footer__nav">
+              <li>
+                <a class="footer__nav-link" href="#">Услуги</a>
+              </li>
+              <li>
+                <a class="footer__nav-link" href="#">Абонементы</a>
+              </li>
+              <li>
+                <a class="footer__nav-link" href="#">Акции</a>
+              </li>
+              <li>
+                <a class="footer__nav-link" href="#">Тренеры</a>
+              </li>
+              <li>
+                <a class="footer__nav-link" href="#">Расписание</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__social">
             <li>
-              <a class="footer__nav-link" href="#">Услуги</a>
+              <a class="footer__social-link" href="https://vk.com/htmlacademy" aria-label="Мы в VK.">
+                <svg width="16" height="16" viewBox="0 0 15 13">
+                  <use href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="footer__nav-link" href="#">Абонементы</a>
+              <a class="footer__social-link" href="https://ok.ru/htmlacademy" aria-label="Мы в одноклассниках.">
+                <svg width="25" height="25">
+                  <use href="img/sprite.svg#icon-odnoklass"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="footer__nav-link" href="#">Акции</a>
-            </li>
-            <li>
-              <a class="footer__nav-link" href="#">Тренеры</a>
-            </li>
-            <li>
-              <a class="footer__nav-link" href="#">Расписание</a>
+              <a class="footer__social-link" href="https://www.reddit.com" aria-label="Мы на Reddit.">
+                <svg width="25" height="25">
+                  <use href="img/sprite.svg#icon-reddit"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="footer__social">
-          <li>
-            <a class="footer__social-link" href="https://vk.com/htmlacademy" aria-label="Мы в VK.">
-              <svg width="16" height="16" viewBox="0 0 15 13">
-                <use href="img/sprite.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="footer__social-link" href="https://ok.ru/htmlacademy" aria-label="Мы в одноклассниках.">
-              <svg width="25" height="25">
-                <use href="img/sprite.svg#icon-odnoklass"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="footer__social-link" href="https://www.reddit.com" aria-label="Мы на Reddit.">
-              <svg width="25" height="25">
-                <use href="img/sprite.svg#icon-reddit"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
-    </div>
     </footer>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

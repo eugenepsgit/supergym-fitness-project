@@ -1,11 +1,11 @@
 import Swiper from '../../vendor/swiper';
 
 let sliderReviews;
-const prevButton = document.querySelector('.reviews__button--prev');
-const nextButton = document.querySelector('.reviews__button--next');
+const prevButton = document.querySelector('[data-slider="prev-review"]');
+const nextButton = document.querySelector('[data-slider="next-review"]');
 
 const sliderReviewsInit = () => {
-  sliderReviews = new Swiper('.reviews__slider-wrapper', {
+  sliderReviews = new Swiper('[data-slider="reviews-slider"]', {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 800,

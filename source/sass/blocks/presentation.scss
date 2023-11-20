@@ -36,7 +36,7 @@
   }
 
   p {
-    margin: 0 0 95px;
+    margin: 29px 0 0;
 
     font-size: 22px;
     font-weight: 400;
@@ -58,7 +58,7 @@
     }
 
     p {
-      margin-bottom: 34px;
+      margin-top: 20px;
 
       font-size: 20px;
       line-height: 20px;
@@ -80,7 +80,7 @@
     }
 
     p {
-      margin-bottom: 37px;
+      margin-top: 13px;
 
       font-size: 18px;
       line-height: 20px;
@@ -88,27 +88,42 @@
   }
 }
 
-.presentation__desc p {
-  margin-bottom: 8px;
+.presentation__desc {
+  margin-top: 95px;
 
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
+  p {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
 
   @include vp-1365 {
+    margin-top: 34px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+
     &:last-child {
       display: none;
     }
   }
+  }
 
   @include vp-767 {
-    font-size: 14px;
-    line-height: 22px;
+    margin-top: 37px;
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 
 .presentation__media-content {
   position: relative;
+  align-self: flex-start;
 
   flex-basis: 48.3vw;
 
@@ -152,10 +167,10 @@
   }
 
   iframe {
-    display: none;
-
     width: 100%;
     height: 100%;
+
+    object-fit: cover;
   }
 
   &--overlay::before {

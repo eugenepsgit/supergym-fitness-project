@@ -9,7 +9,7 @@
   border: 7px solid $color-default-white;
   background-color: $color-default-white;
 
-  &--active {
+  &.is-active {
     border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
     border-image-slice: 1;
   }
@@ -72,8 +72,16 @@
 .tariff-plan__option {
   margin: 0 0 69px;
 
+  color: $color-text-default;
+
   @include vp-1365 {
     margin-bottom: 73px;
+
+    color: #495a7d;
+
+    &--dark {
+      color: $color-text-default;
+    }
   }
 
   @include vp-767 {
@@ -86,7 +94,7 @@
 .tariff-plan__price-content {
   position: relative;
 
-  margin: 0 0 35px 1px;
+  margin: auto 0 35px 1px;
 
   @include vp-1365 {
     margin-bottom: 24px;
@@ -157,5 +165,4 @@
 
 .tariff-plan__buy {
   width: max-content;
-  margin-top: auto;
 }

@@ -57,8 +57,10 @@
 
 .footer__nav {
   display: flex;
-  column-gap: 1.5vw;
   justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1.5vw;
+
 
   margin: 0;
   padding: 0;
@@ -142,6 +144,8 @@
 
 .footer__social {
   display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
   column-gap: 0.73vw;
 
   margin: 0;

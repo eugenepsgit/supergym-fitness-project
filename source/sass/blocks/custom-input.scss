@@ -9,7 +9,7 @@
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
+    @include vp-767 {
       align-items: flex-start;
       flex-direction: column;
     }
@@ -67,11 +67,6 @@
     input,
     textarea {
       border-bottom-color: #ff121f;
-
-      &:focus,
-      &:hover {
-        border-bottom-color: #ff121f;
-      }
     }
   }
 
