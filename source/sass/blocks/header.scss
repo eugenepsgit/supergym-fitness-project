@@ -33,6 +33,17 @@
   }
 }
 
+.header__logo {
+  @include hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid #b4022a;
+  }
+}
+
 .header__contacts {
   color: $color-default-white;
   font-size: 26px;

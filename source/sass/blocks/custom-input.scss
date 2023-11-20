@@ -18,9 +18,9 @@
     textarea {
       flex-grow: 1;
       width: 100%;
-      min-height: 36px;
-      padding: 8px 10px 4px 0;
+      height: 36px;
 
+      padding: 8px 10px 4px 0;
 
       border: 2px solid transparent;
       border-bottom-color: #74819c;
@@ -34,6 +34,10 @@
       font-weight: 400;
       line-height: 22px;
       color: $color-default-white;
+
+      &::placeholder {
+        color: $color-default-white;
+      }
 
       @include vp-1365 {
         padding-bottom: 3px;
@@ -59,6 +63,10 @@
         padding-left: 4px;
 
         border: 2px solid $color-default-white;
+
+        &::placeholder {
+          color: transparent;
+        }
       }
     }
   }

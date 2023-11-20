@@ -53,6 +53,15 @@
       height: 16px;
     }
   }
+
+  @include hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid $color-default-white;
+  }
 }
 
 .footer__nav {

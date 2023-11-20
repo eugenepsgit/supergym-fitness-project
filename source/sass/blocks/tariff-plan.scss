@@ -10,9 +10,10 @@
   background-color: $color-default-white;
 
   &.is-active {
-    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image: linear-gradient(to bottom right,#d10a42,#00359f);
     border-image-slice: 1;
   }
+
 
   @include vp-1365 {
     padding-top: 60px;
@@ -24,38 +25,22 @@
 
 
   @include hover {
-    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image: linear-gradient(to bottom right,#d10a42,#00359f);
     border-image-slice: 1;
   }
 
   &:focus-within {
-    border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image: linear-gradient(to bottom right,#d10a42,#00359f);
     border-image-slice: 1;
     outline: none;
   }
-}
-
-.tariff-plan:hover .tariff-plan__buy {
-  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-  border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-  border-image-slice: 1;
-
-  color: $color-default-white;
-}
-
-.tariff-plan--active .tariff-plan__buy {
-  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-  border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-  border-image-slice: 1;
-
-  color: $color-default-white;
 }
 
 .tariff-plan__title {
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
-  margin: 0 0 6px;
+  margin: 0 0 7px;
 
   @include vp-1365 {
     font-size: 24px;
@@ -70,7 +55,7 @@
 }
 
 .tariff-plan__option {
-  margin: 0 0 69px;
+  margin: 0 0 68px;
 
   color: $color-text-default;
 
@@ -164,5 +149,21 @@
 }
 
 .tariff-plan__buy {
-  width: max-content;
+  width: 59.4%;
+}
+
+.is-active .tariff-plan__buy {
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-slice: 1;
+
+  color: $color-default-white;
+}
+
+.tariff-plan:hover .tariff-plan__buy {
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-slice: 1;
+
+  color: $color-default-white;
 }
